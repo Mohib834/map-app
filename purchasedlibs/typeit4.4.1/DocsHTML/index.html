@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="TypeIt is the most versatile jQuery animated typing plugin on the planet.">
+	<meta name="keywords" content="jQuery,animated typing,JavaScript plugin,jQuery plugin">
+	<meta name="author" content="Alex MacArthur">
+
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200italic,400,600,600italic,700' rel='stylesheet' type='text/css'>
+	<link rel="canonical" href="http://macarthur.me/typeit/docs/">
+
+	<style type="text/css">@-webkit-keyframes upDown{0%{padding-top:0px}100%{padding-top:3px}}@keyframes upDown{0%{padding-top:0px}100%{padding-top:3px}}.page-header:after,.Demo:after,section:after,.setup-blocks:after,.install-blocks:after,.options-wrapper:after,.Docs:after,.HorizontalList:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0}/*! normalize.css v3.0.2 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}header{position:relative;margin:0;padding:0;border-bottom:2px solid rgba(128,128,128,0.08);transition:height .25s ease-in}header .disclaimer{position:absolute;width:100%;bottom:-2.5rem;left:0;font-size:1.5rem}.page-header{padding:2rem 0;margin-bottom:3rem}@media screen and (max-width: 600px){.page-header{padding-top:65px}}.page-header .Container{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.page-header h1{font-size:5rem;text-align:left;margin:0;float:left}.page-header h1 a{font-size:inherit;font-weight:inherit}.page-header h2{float:right;font-size:2rem;font-weight:normal;margin:0}#header{height:600px}.header-content{position:absolute;top:45%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);width:100%}.header-content hr{margin-bottom:1rem}#typeit-box{line-height:6rem;font-size:2.75rem;margin:2rem 0 3rem;font-weight:200;line-height:1.5}@media screen and (max-width: 768px){#typeit-box{font-size:2.75rem}}@media screen and (max-width: 600px){#typeit-box{font-size:2.25rem;line-height:3rem}}@media screen and (max-width: 500px){#typeit-box{font-size:2rem;line-height:2.25rem}}#typeit-box-code-link{opacity:0;position:absolute;bottom:25px;transition:opacity .25s ease-in-out .25s;width:100%;text-align:center;left:0;font-size:1.5rem}#typeit-box-code-link.is-visible{opacity:1}@media screen and (max-width: 500px){#typeit-box-code-link{bottom:auto;top:-5rem}}#typeit-box-code{background:rgba(255,255,255,0.95);position:fixed;top:0;left:0;width:100%;height:100%;text-align:left;padding:3rem;z-index:-1;opacity:0;transition:opacity .15s ease-in-out}#typeit-box-code span{font-size:1.5rem;position:absolute;left:50%;top:50%;-webkit-transform:translate(-45%, -50%);-ms-transform:translate(-45%, -50%);transform:translate(-45%, -50%)}#typeit-box-code span em{font-style:normal;color:#ED6B86}#typeit-box-code span .work{position:absolute;left:1.5rem;bottom:-4rem;-webkit-transform:rotate(-90deg);-ms-transform:rotate(-90deg);transform:rotate(-90deg)}#typeit-box-code span .queue{background:rgba(237,107,134,0.25)}#typeit-box-code.is-visible{z-index:1;opacity:1}#typeit-box-code-close{width:35px;position:fixed;right:15px;top:15px;cursor:pointer}.github-icon-holder{width:25px;margin:0 auto .75rem}.github-icon-holder path{fill:black}.CTALinks{position:absolute;display:block;bottom:2rem;width:100%}@media screen and (max-width: 600px){.CTALinks{padding:0 1rem;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:baseline;-ms-flex-align:baseline;align-items:baseline;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around}}.CTALinks a{color:black;display:inline-block;left:0;width:auto;text-align:center;line-height:.75}.CTALinks a+a{margin-left:2rem}@media screen and (max-width: 600px){.CTALinks a+a{margin-left:1rem}}.CTALinks a:hover{color:#458a67}.CTALinks a:hover svg path{fill:#458a67}.github-text{font-size:1.5rem}@media screen and (max-width: 600px){.github-text{font-size:1.25rem}}.main-header{margin:0 0 1rem;font-weight:100;font-size:8rem}@media screen and (max-width: 600px){.main-header{font-size:5rem;margin-bottom:.75rem}}.emphasized{font-size:inherit;font-weight:500}*{font-family:'Source Sans Pro', sans-serif;text-decoration:none;box-sizing:border-box}html,body{font-size:62.5%;height:100%;text-align:center}a{color:black;cursor:pointer}a:hover{color:#ED6B86}p,.Main--docs li,.Main--docs table *,.code{margin:0 0 3px;color:#5A5A5A}.Main--home p,.Main--home .Main--docs li,.Main--docs .Main--home li,.Main--home .Main--docs table *,.Main--docs table .Main--home *,.Main--home .code{font-size:2rem}.description{margin-bottom:2.5rem}.Section--home h2{margin-top:0}.Section--home:not(:last-child){padding:7rem 0}.Section--home:first-child{padding:5rem 0;line-height:1.5}.Section--home:first-child span,.Section--home:first-child p,.Section--home:first-child .Main--docs li,.Main--docs .Section--home:first-child li,.Section--home:first-child .Main--docs table *,.Main--docs table .Section--home:first-child *,.Section--home:first-child .code{display:inline-block;color:#5A5A5A}.Section--home:first-child p+p,.Section--home:first-child .Main--docs li+p,.Main--docs .Section--home:first-child li+p,.Section--home:first-child .Main--docs table *+p,.Main--docs table .Section--home:first-child *+p,.Section--home:first-child .code+p,.Section--home:first-child .Main--docs p+li,.Main--docs .Section--home:first-child p+li,.Section--home:first-child .Main--docs li+li,.Main--docs .Section--home:first-child li+li,.Section--home:first-child .Main--docs table *+li,.Main--docs table .Section--home:first-child *+li,.Section--home:first-child .Main--docs .code+li,.Main--docs .Section--home:first-child .code+li,.Section--home:first-child .Main--docs table p+*,.Main--docs table .Section--home:first-child p+*,.Section--home:first-child .Main--docs table li+*,.Main--docs .Section--home:first-child table li+*,.Main--docs table .Section--home:first-child li+*,.Section--home:first-child .Main--docs table *+*,.Main--docs table .Section--home:first-child *+*,.Section--home:first-child .Main--docs table .code+*,.Main--docs table .Section--home:first-child .code+*,.Section--home:first-child p+.code,.Section--home:first-child .Main--docs li+.code,.Main--docs .Section--home:first-child li+.code,.Section--home:first-child .Main--docs table *+.code,.Main--docs table .Section--home:first-child *+.code,.Section--home:first-child .code+.code{margin-top:2rem}.Section--home:nth-last-child(2) h3{margin:0}.Section--home:nth-last-child(2) .Button{margin:2rem 0;display:inline-block}.Section--home:last-child h3{margin:2rem 0}.Section--home:nth-child(2n+1){background:rgba(128,128,128,0.1)}hr{display:block;width:50%;height:2px;background-color:rgba(0,0,0,0.09);border:0;margin-top:2.1rem}.section-divider{margin:6rem auto}@media screen and (max-width: 992px){.section-divider{margin:4rem auto}}@media screen and (max-width: 600px){.section-divider{margin-bottom:1rem}}h1{font-size:5rem}h2{font-size:3.5rem;margin-bottom:4rem}@media screen and (max-width: 992px){h2{margin-bottom:1rem}}h3{font-size:2rem;margin-bottom:1rem}h4{font-size:1.75rem;font-weight:normal;margin:2rem 0 1rem}h5{font-size:1.5rem;font-weight:bold;margin:2rem 0 1rem}span,li{font-size:2rem}code{white-space:nowrap}a,p,.Main--docs li,.Main--docs table *,.code,code,.CodeBlock,th,td{font-size:1.5rem}.Title--description{margin:0 0 1rem}.Description{margin-bottom:3rem}table{border:1px solid rgba(128,128,128,0.1)}table .code:first-child{margin-top:1rem}th,td{text-align:left;padding:1rem}tr:nth-child(2n){background:rgba(128,128,128,0.08)}pre{margin:0}a{font-weight:600}.Body--home a{font-size:2rem}section{position:relative}.right{width:70%}.left{width:30%}.left,.right{float:left;padding:0 2rem}@media screen and (max-width: 992px){.left,.right{width:100%}}.Container{max-width:1200px;width:80%;margin:0 auto}@media screen and (max-width: 600px){.Container{width:90%}}.CodeBlock{display:block;position:relative;text-align:left;padding:1rem 2rem 1rem;border:1px solid rgba(128,128,128,0.1);background:rgba(128,128,128,0.08);word-wrap:break-word;font-size:2rem;max-width:100%}.CodeBlock--input{text-align:left;margin-bottom:3rem}small{position:absolute;height:45px;width:75px;text-align:center;display:block;right:-45px;-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg);border-bottom:0;font-size:2rem;opacity:.25}.chevron{width:35px;position:absolute;padding:0;font-size:1.5rem;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);-webkit-animation:upDown .45s ease-in-out infinite alternate;animation:upDown .45s ease-in-out infinite alternate;bottom:-4.5rem}.setup-blocks{display:-webkit-flex;display:-ms-flexbox;display:flex}@media screen and (max-width: 600px){.setup-blocks{width:100%;display:block}}.setup-block{width:33.33%;float:left;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}.setup-block+.setup-block{margin-left:1rem}.setup-block .Button{margin-top:auto}@media screen and (max-width: 600px){.setup-block{width:100%;display:block}.setup-block+.setup-block{margin:1.5rem 0 0}}@media screen and (max-width: 768px){.install-blocks{display:block}}.install-block{padding:0 1rem;width:100%}.install-block p,.install-block .Main--docs li,.Main--docs .install-block li,.install-block .Main--docs table *,.Main--docs table .install-block *,.install-block .code{display:block;margin-bottom:3rem}.install-block .CodeBlock{margin-top:auto;display:inline-block}@media screen and (max-width: 768px){.install-block{width:100%;display:block}}.step-num{font-size:25px;margin:1.5rem auto 2rem;width:50px;height:50px;border:3px solid black;border-radius:50%;line-height:40px}.just-a-class{font-size:inherit;font-weight:800;font-style:italic;color:#458a67}.middle-th{width:75%}@media screen and (max-width: 600px){.Section--options table tr:first-child,.Section--advanced_usage table tr:first-child{display:none}.Section--options table tr:last-child td:last-child,.Section--advanced_usage table tr:last-child td:last-child{border:0}.Section--options table td,.Section--advanced_usage table td{width:100%;display:block;padding-left:50%;position:relative;border-bottom:1px solid rgba(90,90,90,0.3);margin:0}.Section--options table td:before,.Section--advanced_usage table td:before{content:'';font-weight:bold;position:absolute;left:15px;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);font-size:1.5rem}.Section--options table td:nth-child(1):before,.Section--advanced_usage table td:nth-child(1):before{content:'Option'}.Section--options table td:nth-child(2):before,.Section--advanced_usage table td:nth-child(2):before{content:'Description'}.Section--options table td:nth-child(3):before,.Section--advanced_usage table td:nth-child(3):before{content:'Default'}.Section--advanced_usage table td:nth-child(1):before{content:'Function'}.Section--advanced_usage table td:nth-child(2):before{content:'Arguments'}.Section--advanced_usage table td:nth-child(3):before{content:'Description'}}.computer{position:relative;max-width:725px;width:80%;margin:0 auto}.computer:before{display:block;content:"";width:100%;padding-top:56.25%}.computer>.content{position:absolute;top:0;left:0;right:0;bottom:0}@media screen and (max-height: 600px){.computer{max-width:500px}}.monitor{margin:0 auto;border:7px solid black;border-radius:10px}.base{width:120%;height:25px;background:black;border-radius:10px;position:relative;left:50%;bottom:-24px;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}@media screen and (max-width: 768px){.base{height:20px;bottom:-19px}}@media screen and (max-width: 600px){.base{height:15px;bottom:-14px}}.power{position:absolute;top:7px;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);background:white;height:5px;width:100px;border-radius:5px}@media screen and (max-width: 600px){.power{top:4px}}.monitor-content{position:absolute;width:100%;top:45%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);padding:1rem}.info{font-size:1.5rem;display:block;margin:2rem 0}.ti-header{margin-bottom:0}#stringTI{width:100%;padding:1rem}#tempText{position:absolute;width:100%;display:block;opacity:.1;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}input,textarea,select{border-radius:3px;border:1px solid rgba(128,128,128,0.5);font-size:2rem;text-align:center;margin-bottom:2rem;width:100%;height:35px;line-height:35px;padding:0 1rem;background:none}textarea{height:auto}#TIOutputBox{background:rgba(128,128,128,0.08);width:100%;min-height:75px;position:relative;padding:2rem 0}.expand-output-box{transition:all .25s ease-in-out;max-height:1000px}#TIOutput{font-size:3rem}label{font-size:1.5rem;display:block;width:100%;text-align:left;margin:0 0 .5rem;opacity:.65}.options-wrapper{width:100%;text-align:center}.ti-option-box{width:49%;float:left}.ti-option-box:nth-child(2n-1):not(:last-child){margin-right:2%}.ti-option-box:last-child{width:100%}.Main--docs{float:left;width:75%;padding-left:2rem}@media screen and (max-width: 768px){.Main--docs{width:66.66%}}@media screen and (max-width: 600px){.Main--docs{width:100%;padding:0}}.Main--docs ul{padding:0}.Main--docs section{text-align:left}.Main--docs section h3{margin-top:0}.Main--docs section+section{margin-top:2rem}.Main--docs li{position:relative;display:inline-block;margin-left:1.25rem;width:100%}.Main--docs li:before{content:'\2022';position:absolute;left:-1.25rem}.Main--docs p,.Main--docs li,.Main--docs table *,.Main--docs .code{margin-bottom:1rem}.Docs-sidebar{float:left;width:25%}@media screen and (max-width: 768px){.Docs-sidebar{width:33.33%}}@media screen and (max-width: 600px){.Docs-sidebar{background:rgba(255,255,255,0.9);-webkit-transform:scale(0.95);-ms-transform:scale(0.95);transform:scale(0.95);width:100%;position:fixed;top:0;left:0;z-index:1}}.Docs-sidebar ul{padding:1rem 3rem 2rem;background:rgba(128,128,128,0.08)}@media screen and (max-width: 600px){.Docs-sidebar ul li{text-align:center}}@media screen and (max-width: 600px){.Docs-sidebar ul{background:none}}#menu-toggle{display:none;position:fixed;top:0;left:0;height:50px;width:100%;z-index:2;background:white;border-bottom:2px solid rgba(128,128,128,0.08);line-height:50px;text-transform:uppercase;letter-spacing:2px;cursor:pointer}@media screen and (max-width: 600px){#menu-toggle{display:block}}.code{background:rgba(128,128,128,0.08);padding:1rem;border-radius:3px;margin-top:1rem;display:block;word-wrap:break-word}.code.inline{display:inline;padding:.25rem}.SectionList{margin:0;transition:max-height .15s ease-in-out}@media screen and (max-width: 600px){.SectionList{max-height:0;overflow:hidden;margin-top:50px}.Docs-sidebar .SectionList{padding:0}.SectionList.is-open{max-height:500px}}.SectionList li{white-space:nowrap;display:inline-block;width:100%;text-align:left}@media screen and (max-width: 600px){.SectionList li:last-child{padding-bottom:2rem}}.SectionList.is-fixed{position:fixed;top:15px}.HorizontalList{padding:0}.HorizontalList li{display:inline-block;width:auto;float:left;margin:0;text-align:center;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}.HorizontalList li:before{content:''}.Section--donate .HorizontalList li{width:48%}.Section--donate .HorizontalList li:not(:last-child){margin-right:4%}@media screen and (max-width: 600px){.Section--donate .HorizontalList li{width:100%}.Section--donate .HorizontalList li+li{margin-top:1.5rem}}.Section--license .HorizontalList li{width:30%}.Section--license .HorizontalList li:not(:last-child){margin-right:1.5%}@media screen and (max-width: 600px){.Section--license .HorizontalList li{width:100%}.Section--license .HorizontalList li+li{margin-top:2rem}}.HorizontalList .Button{margin-top:1rem;display:inline-block;width:100%}.HookUpSteps{counter-reset:steps}.HookUpSteps li{counter-increment:steps}.HookUpSteps li:before{content:counters(steps, ".") "."}.Button{background:#ED6B86;padding:1rem 2rem;border-radius:3px;border:2px solid rgba(255,255,255,0);color:white;font-weight:normal;letter-spacing:1px}.Button:hover{background:none;border-color:#ED6B86;color:#ED6B86}.Section--docs .Button{margin:1rem 0 2rem;display:inline-block}.Button--green{background:#5BBD8C;margin:.6rem 0 2rem;display:inline-block;height:auto}.Button--green:hover{border-color:#5BBD8C;color:#5BBD8C}footer{background:black;padding:2rem}.connect-list{margin:0 0 1rem;padding:0;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.connect-list *{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.connect-item{display:inline-block;padding:0 1rem;position:relative}.connect-item a{display:block}.connect-item:hover svg,.connect-item:hover path{fill:#ED6B86}.connect-item i{color:white;font-size:3rem}.connect-item i:hover{color:#ED6B86}.connect-item svg{fill:white;width:25px}.connect-item path{fill:white}.Copyright{opacity:.25;display:block;color:white;font-weight:100;font-size:1.5rem;text-transform:uppercase}.Copyright a{color:inherit;font-size:inherit;font-weight:inherit}.PreFooter{border-top:2px solid rgba(128,128,128,0.08);margin-top:3rem}.PreFooter ul{margin-top:.5rem;list-style:none;padding:0}.PreFooter ul li{width:auto;display:inline-block;margin:0}.PreFooter ul li+li{margin-left:2rem}.PreFooter ul li:before{content:''}
+</style>
+
+	<title>TypeIt. The Most Versatile jQuery Animated Typing Plugin on the Planet.</title>
+</head>
+
+
+  <body id="body" class="Body--docs">
+
+    <header class="page-header" id="top">
+	<div class="Container">
+		<h1 class="main-header">
+			<a href="/">
+				TypeIt
+			</a>
+		</h1>
+
+		<h2>
+			Documentation
+		</h2>
+	</div>
+</header>
+
+<div class="Docs">
+
+	<div class="Container">
+	<span id="menu-toggle">Menu</span>
+
+	<aside class="Docs-sidebar">
+
+		<ul class="SectionList">
+			<li><a href="#overview">Overview</a></li>
+			<li><a href="#setup">Setup</a></li>
+			<li><a href="#simpleUsage">Simple Usage</a></li>
+			<li><a href="#advancedUsage">Advanced Usage</a></li>
+			<li><a href="#options">Options</a></li>
+			<li><a href="#contributions">Contributions</a></li>
+		</ul>
+
+	</aside>
+
+	<main class="Main--docs" id="docsMain">
+
+		<section class="Section--overview" id="overview">
+	<h3>Overview</h3>
+
+	<p>
+		TypeIt is the most versatile jQuery animated typing plugin on the planet. In simple use, it allows you to type single or multiple strings that break lines, delete &amp; replace each other, and it even handles HTML tags &amp; entities.
+	</p>
+
+	<p>
+		For more advanced, controlled typing effects, TypeIt comes with companion functions that can be chained to control your typing down to the smallest character, enabling you to type an dynamic narrative, with complete control over speed, characters, line breaks, deletions, pausing, everything.
+	</p>
+
+	<h4>Some of the Features</h4>
+
+	<ul>
+		<li>Choose to start typing only when your element becomes visible on the screen.</li>
+		<li>Loop your string(s) continuously.</li>
+		<li>Define you strings via JSON or in the HTML (useful in case user doesn't have JavaScript enabled).</li>
+		<li>Create several unique instances on a single page.</li>
+		<li>Handle HTML tags (including your custom classes, ID's, etc.) and entities with ease.</li>
+		<li>Use companion functions to chain individual commands together for fine tuning your typing.</li>
+		<li>Compatible from jQuery 1.8.0 through 3.0.0.</li>
+		<li>Lightweight. (~5kb, single JavaScript file)</li>
+	</ul>
+
+</section>
+
+		<section class="Section--setup" id="setup">
+	<h3>Setup</h3>
+
+	<h4>Get the Code</h4>
+	<p>Download from the following sources: </p>
+
+	<ul class="SourceList">
+		<li>
+			<a href="https://www.jsdelivr.com/projects/jquery.typeit">CDN:</a> The recommended way to use TypeIt.
+
+			<span class="code">https://cdn.jsdelivr.net/jquery.typeit/4.2.3/typeit.min.js</span>
+
+			<span class="code">https://cdnjs.cloudflare.com/ajax/libs/typeit/4.2.3/typeit.min.js</span>
+		</li>
+		<li>
+			<a href="https://www.npmjs.com/package/typeit">npm:</a> Install with the following command. <span class="code">npm install typeit</span>
+		</li>
+		<li>
+			<a href="https://github.com/alexmacarthur/typeit">Github:</a> Clone the repository.
+
+			<span class="code">git clone https://github.com/alexmacarthur/typeit.git</span>
+		</li>
+	</ul>
+
+	<h4>Hook It Up</h4>
+
+	<ul class="HookUpSteps">
+		<li>Load jQuery and typeit.js on your page.
+			<span class="code">
+				&lt;script src=&quot;jquery-2.1.4.min.js&quot;&gt;&lt;/script&gt;
+				<br>
+				&lt;script src=&quot;typeit.js&quot;&gt;&lt;/script&gt;
+			</span>
+		</li>
+
+		<li>Create an empty HTML element to select. (If you want to have a fallback for users without JavaScript, you can put a string or strings right into this element. <a href="#htmlDefinition">More on that later.</a>)
+			<span class="code">
+				&lt;span class=&quot;type-it&quot;&gt;&lt;/span&gt;
+			</span>
+		</li>
+	</ul>
+
+</section>
+
+
+		<section class="Section--simple_usage" id="simpleUsage">
+	<h3>Simple Usage</h3>
+	<p>In it's simplest use, just call typeIt() on any element and include your <a href="#options">options</a>.</p>
+
+	<span class="code">
+		$('.type-it').typeIt({<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strings: ['This is my string!']<br>
+		});
+	</span>
+
+	<h4>About Defining Your Strings</h4>
+
+	<h5>Via JSON</h5>
+	<p>Define your string(s) by using the <span class="code inline">strings</span> option.
+
+	<span class="code">strings: 'Here is my string!'</span>
+
+	<h5 id="htmlDefinition">Directly in the HTML</h5>
+	<p>As a fallback for users without JavaScript, you may define strings in your HTML element. However, <strong>this will override any strings you've defined via JSON.</strong></p>
+	<span class="code">
+		&lt;span class=&quot;type-it&quot;&gt;Here is a string.&lt;/span&gt;
+	</span>
+
+	<h4>Typing Multiple Strings</h4>
+	<p>You cou can also configure TypeIt to type multiple strings in a single call.</p>
+
+	<p>If you define your strings within your HTML element, just separate them with &lt;br&gt; tags:</p>
+
+	<span class="code">
+		 &lt;span class="type-it"&gt;Here is a string. &lt;br&gt;And here is another!&lt;/span&gt;
+	</span>
+
+	<p>If they're defined via JSON, it's possible to put them inside quotation marks separated by &lt;br&gt; tags, but it's recommended that you use an array.</p>
+
+	<span class="code">
+		$('.type-it').typeIt({<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strings: ['Enter your string here!', 'Another string!']<br>
+		});
+	</span>
+
+	<p>By default, multiple strings will break lines (breakLines: true). However, you can also set them to delete and replace each other.</p>
+
+	<span class="code">
+		$('.type-it').typeIt({<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strings: ['Enter your string here!', 'Another string!'],<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;breakLines: false<br>
+		});
+	</span>
+
+</section>
+
+		<section class="Section--advanced_usage" id="advancedUsage">
+	<h3>Advanced Usage</h3>
+
+	<p>To control your typing down to the smallest character, there are five companion functions available. Simply chain them together following a typeIt() call on an element, and your chain will execute.</p>
+
+	<p>Note that when using these functions, the <span class="code inline">strings</span> option should not defined.</p>
+
+	<span class="code">
+		$('.type-it').typeIt({<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;speed: 900,<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lifeLike: false,<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;autoStart: false<br>
+		})<br>
+		.tiType('I am typing slowly,')<br>
+		.tiSettings({speed: 100})<br>
+		.tiType('but now I am typing pretty fasst')<br>
+		.tiDelete(2)<br>
+		.tiType('t!');
+	</span>
+
+	<h4>Companion Functions</h4>
+	<table>
+
+        <tr>
+          <th>Function</th>
+          <th>Arguments</th>
+          <th>Description</th>
+        </tr>
+
+        <tr>
+          <td>tiType()</td>
+          <td>(string)</td>
+          <td>Will type the characters.</td>
+        </tr>
+
+        <tr>
+          <td>tiDelete()</td>
+          <td>(number)</td>
+          <td>Will delete the number of characters/entities entered.</td>
+        </tr>
+
+        <tr>
+          <td>tiPause()</td>
+          <td>(number)</td>
+          <td>Will pause the specified number of milliseconds.</td>
+        </tr>
+
+        <tr>
+          <td>tiBreak()</td>
+          <td>(none)</td>
+          <td>Will break the typing to a new line.</td>
+        </tr>
+
+        <tr>
+            <td>tiEmpty()</td>
+            <td>(none)</td>
+            <td>Will instantly delete everything that's been typed.</td>
+        </tr>
+
+        <tr>
+          <td>tiSettings()</td>
+          <td>(JSON)</td>
+          <td>Will redefine your options on the fly. This will only work for updating the <em>speed</em>, <em>lifeLike</em>, and <em>html</em> options.</td>
+        </tr>
+
+  	</table>
+
+</section>
+
+		<section class="Section--html" id="html">
+	<h3>About HTML Handling</h3>
+	<p>TypeIt is fully prepared to handle HTML in your strings.</p>
+
+	<h4>HTML Elements</h4>
+	<p>Tags must be one level deep and be <span class="code inline">inline</span> elements.</p>
+
+	<span class="code">
+		// GOOD! :)
+		$('.typeit-box').typeIt({<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strings: '&lt;h1 class="your-class"&gt;This is a string!&lt;/h1&gt;',
+		}
+	</span>
+
+	<span class="code">
+		// BAD! :(
+		$('.typeit-box').typeIt({<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strings: '&lt;h1 class="your-class">&lt;span&gt;This is a string!&lt;/span&gt;&lt;/h1&gt;',
+		}
+	</span>
+
+	<h4>HTML Entities</h4>
+	<p>ASCII HTML entities must begin with <span class="code inline">&amp;</span> and end with <span class="code inline">;</span>.</p>
+
+	<span class="code">
+		$('.typeit-box').typeIt({<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strings: '&lt;h1 class="your-class"&gt;I really &amp;hearts; Life cereal.&lt;h1&gt;',
+		}
+	</span>
+
+</section>
+
+		<section class="Section--options" id="options">
+	<h3>Options</h3>
+
+    <table>
+	    <tr>
+			<th>Option</th>
+			<th class="middle-th">Description</th>
+			<th>Default</th>
+	    </tr>
+
+	    <tr>
+			<td>strings</td>
+			<td>(string, array) The string or strings you'd like to type. Define a single string within quotes or define multiple with an array.
+			<span class="code">
+				strings: 'Hello! This is my string.'
+			</span>
+
+			<span class="code">
+				strings: ['Hello!', 'This is another string.']
+			</span>
+			</td>
+			<td>(nothing)</td>
+	    </tr>
+
+	    <tr>
+			<td>speed</td>
+			<td>(number) The speed (milliseconds) at which you want to type.</td>
+			<td>100</td>
+	    </tr>
+
+	   	<tr>
+			<td>deleteSpeed</td>
+			<td>(number) The speed (milliseconds) at which you want to delete. If left undefined, 1/3 of the <span class="code inline">speed</span> will be used.</td>
+			<td>undefined</td>
+	    </tr>
+
+	    <tr>
+			<td>lifeLike</td>
+			<td>(boolean) Choose whether the plugin types at a constant pace or irregular, life-like pace. Pace is calculated by choosing a random value between a range 50% above and below the type or delete speed will be used.</td>
+			<td>true</td>
+	    </tr>
+
+	    <tr>
+			<td>cursor</td>
+			<td>(boolean) Choose whether you want the blinking cursor to appear when typing.</td>
+			<td>true</td>
+	    </tr>
+
+	    <tr>
+			<td>cursorSpeed</td>
+			<td>(number) The blinking speed (milliseconds) of the cursor.</td>
+			<td>1000</td>
+	    </tr>
+
+	    <tr>
+			<td>breakLines</td>
+			<td>(boolean) Choose whether you want multiple strings to be printed on top of each other (breakLines = true), or if you want each string to be deleted and replaced by the next one (breakLines = false).</td>
+			<td>true</td>
+	    </tr>
+
+	    <tr>
+			<td>breakDelay</td>
+			<td>(number) The amount of time (milliseconds) between typing multiple strings.</td>
+			<td>750</td>
+	    </tr>
+
+        <tr>
+            <td>deleteDelay</td>
+            <td>(number) The amount of time (milliseconds) between deleting the current string and continuing to type additional strings. <strong>Only effective when <span class="code inline">breakLines</span> is set to <span class="code inline">false</span>.</strong></td>
+            <td>750</td>
+        </tr>
+
+	    <tr>
+			<td>startDelay</td>
+			<td>(number) The amount of time (milliseconds) before the plugin begins typing after initializing.</td>
+			<td>250</td>
+	    </tr>
+
+	    <tr>
+			<td>startDelete</td>
+			<td>If <span class="code inline">true</span>, strings within the element upon initialization will first be deleted before typing any strings that are defined via JSON. <strong>Requires that a string or strings are defined within the HTML element before initalizing.</strong> Additionally, if you don't define more strings via JSON or by using companion functions, no further typing will take place after these strings are deleted.
+			<br>
+			<br>
+
+			<span class="code">
+				&lt;span id="element"&gt;This will first be deleted...&lt;/span&gt;
+				<br>
+				<br>
+				$('#element').typeIt({<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;startDelete: true,<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strings: 'And then this will be typed.'<br>
+				});
+			</span>
+			</td>
+			<td>true</td>
+	    </tr>
+
+	    <tr>
+			<td>loop</td>
+			<td>(boolean) Have your string or strings continuously loop after completing.</td>
+			<td>false</td>
+	    </tr>
+
+	    <tr>
+			<td>loopDelay</td>
+			<td>(number) The amount of time (milliseconds) between looping over a string or set of strings again. Half of this delay will occur after the remaining strings have been successfully deleted, and half will occur before the strings begin to type again.</td>
+			<td>750</td>
+	    </tr>
+
+	    <tr>
+			<td>html</td>
+			<td>Whether HTML tags and entities will be rendered when typing.</td>
+			<td>true</td>
+	    </tr>
+
+	   	<tr>
+			<td>autoStart</td>
+			<td>Whether TypeIt will begin typing automatically on page load (true), or only when the element becomes visible in the viewport (false).</td>
+			<td>true</td>
+	    </tr>
+
+	   	<tr>
+			<td>callback</td>
+			<td>
+			A function that executes after your typing has completed. Must be passed as a function. Example:
+
+			<span class="code">
+				// BAD :(<br>
+				callback: alert('done!');
+			</span>
+
+			<span class="code">
+				// GOOD :)<br>
+				callback: function() {<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert('done!');<br>
+				}
+			</span>
+
+			</td>
+	      <td>(nothing)</td>
+	    </tr>
+
+	</table>
+
+</section>
+
+		<section class="Section--contributions" id="contributions">
+	<h3>Contributions</h3>
+	<p>Gulp is configured to check &amp; minify the JavaScript. Just use the following command to make it happen (make sure Node.js, npm, and Gulp are installed on your computer).</p>
+
+	<span class="code">
+		npm install
+		<br>
+		gulp develop
+	</span>
+</section>
+
+	</main>
+
+	</div>
+</div>
+
+<div class="PreFooter">
+	<ul>
+		<li><a href="http://macarthur.me/typeit">Back to Home</a></li>
+		<li><a href="#top">Back to Top</a></li>
+	</ul>
+</div>
+
+    <footer>
+
+  <ul class="connect-list">
+    <li class="connect-item">
+      <a href="http://www.github.com/alexmacarthur">
+        <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1664 896q0 251-146.5 451.5t-378.5 277.5q-27 5-39.5-7t-12.5-30v-211q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-121-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-86-13.5q-44 113-7 204-79 85-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-40 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 89t.5 54q0 18-13 30t-40 7q-232-77-378.5-277.5t-146.5-451.5q0-209 103-385.5t279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z" fill="#fff"/></svg>
+      </a>
+    </li>
+    <li class="connect-item">
+      <a href="http://www.twitter.com/amacarthur">
+       <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"/></svg>
+      </a>
+    </li>
+    <li class="connect-item">
+      <a href="https://www.linkedin.com/in/alexmacarthur">
+        <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z" fill="#fff"/></svg>
+      </a>
+    </li>
+    <li class="connect-item">
+    <a href="http://macarthur.me">
+      <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M896 128q209 0 385.5 103t279.5 279.5 103 385.5-103 385.5-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103zm274 521q-2 1-9.5 9.5t-13.5 9.5q2 0 4.5-5t5-11 3.5-7q6-7 22-15 14-6 52-12 34-8 51 11-2-2 9.5-13t14.5-12q3-2 15-4.5t15-7.5l2-22q-12 1-17.5-7t-6.5-21q0 2-6 8 0-7-4.5-8t-11.5 1-9 1q-10-3-15-7.5t-8-16.5-4-15q-2-5-9.5-10.5t-9.5-10.5q-1-2-2.5-5.5t-3-6.5-4-5.5-5.5-2.5-7 5-7.5 10-4.5 5q-3-2-6-1.5t-4.5 1-4.5 3-5 3.5q-3 2-8.5 3t-8.5 2q15-5-1-11-10-4-16-3 9-4 7.5-12t-8.5-14h5q-1-4-8.5-8.5t-17.5-8.5-13-6q-8-5-34-9.5t-33-.5q-5 6-4.5 10.5t4 14 3.5 12.5q1 6-5.5 13t-6.5 12q0 7 14 15.5t10 21.5q-3 8-16 16t-16 12q-5 8-1.5 18.5t10.5 16.5q2 2 1.5 4t-3.5 4.5-5.5 4-6.5 3.5l-3 2q-11 5-20.5-6t-13.5-26q-7-25-16-30-23-8-29 1-5-13-41-26-25-9-58-4 6-1 0-15-7-15-19-12 3-6 4-17.5t1-13.5q3-13 12-23 1-1 7-8.5t9.5-13.5.5-6q35 4 50-11 5-5 11.5-17t10.5-17q9-6 14-5.5t14.5 5.5 14.5 5q14 1 15.5-11t-7.5-20q12 1 3-17-5-7-8-9-12-4-27 5-8 4 2 8-1-1-9.5 10.5t-16.5 17.5-16-5q-1-1-5.5-13.5t-9.5-13.5q-8 0-16 15 3-8-11-15t-24-8q19-12-8-27-7-4-20.5-5t-19.5 4q-5 7-5.5 11.5t5 8 10.5 5.5 11.5 4 8.5 3q14 10 8 14-2 1-8.5 3.5t-11.5 4.5-6 4q-3 4 0 14t-2 14q-5-5-9-17.5t-7-16.5q7 9-25 6l-10-1q-4 0-16 2t-20.5 1-13.5-8q-4-8 0-20 1-4 4-2-4-3-11-9.5t-10-8.5q-46 15-94 41 6 1 12-1 5-2 13-6.5t10-5.5q34-14 42-7l5-5q14 16 20 25-7-4-30-1-20 6-22 12 7 12 5 18-4-3-11.5-10t-14.5-11-15-5q-16 0-22 1-146 80-235 222 7 7 12 8 4 1 5 9t2.5 11 11.5-3q9 8 3 19 1-1 44 27 19 17 21 21 3 11-10 18-1-2-9-9t-9-4q-3 5 .5 18.5t10.5 12.5q-7 0-9.5 16t-2.5 35.5-1 23.5l2 1q-3 12 5.5 34.5t21.5 19.5q-13 3 20 43 6 8 8 9 3 2 12 7.5t15 10 10 10.5q4 5 10 22.5t14 23.5q-2 6 9.5 20t10.5 23q-1 0-2.5 1t-2.5 1q3 7 15.5 14t15.5 13q1 3 2 10t3 11 8 2q2-20-24-62-15-25-17-29-3-5-5.5-15.5t-4.5-14.5q2 0 6 1.5t8.5 3.5 7.5 4 2 3q-3 7 2 17.5t12 18.5 17 19 12 13q6 6 14 19.5t0 13.5q9 0 20 10t17 20q5 8 8 26t5 24q2 7 8.5 13.5t12.5 9.5l16 8 13 7q5 2 18.5 10.5t21.5 11.5q10 4 16 4t14.5-2.5 13.5-3.5q15-2 29 15t21 21q36 19 55 11-2 1 .5 7.5t8 15.5 9 14.5 5.5 8.5q5 6 18 15t18 15q6-4 7-9-3 8 7 20t18 10q14-3 14-32-31 15-49-18 0-1-2.5-5.5t-4-8.5-2.5-8.5 0-7.5 5-3q9 0 10-3.5t-2-12.5-4-13q-1-8-11-20t-12-15q-5 9-16 8t-16-9q0 1-1.5 5.5t-1.5 6.5q-13 0-15-1 1-3 2.5-17.5t3.5-22.5q1-4 5.5-12t7.5-14.5 4-12.5-4.5-9.5-17.5-2.5q-19 1-26 20-1 3-3 10.5t-5 11.5-9 7q-7 3-24 2t-24-5q-13-8-22.5-29t-9.5-37q0-10 2.5-26.5t3-25-5.5-24.5q3-2 9-9.5t10-10.5q2-1 4.5-1.5t4.5 0 4-1.5 3-6q-1-1-4-3-3-3-4-3 7 3 28.5-1.5t27.5 1.5q15 11 22-2 0-1-2.5-9.5t-.5-13.5q5 27 29 9 3 3 15.5 5t17.5 5q3 2 7 5.5t5.5 4.5 5-.5 8.5-6.5q10 14 12 24 11 40 19 44 7 3 11 2t4.5-9.5 0-14-1.5-12.5l-1-8v-18l-1-8q-15-3-18.5-12t1.5-18.5 15-18.5q1-1 8-3.5t15.5-6.5 12.5-8q21-19 15-35 7 0 11-9-1 0-5-3t-7.5-5-4.5-2q9-5 2-16 5-3 7.5-11t7.5-10q9 12 21 2 7-8 1-16 5-7 20.5-10.5t18.5-9.5q7 2 8-2t1-12 3-12q4-5 15-9t13-5l17-11q3-4 0-4 18 2 31-11 10-11-6-20 3-6-3-9.5t-15-5.5q3-1 11.5-.5t10.5-1.5q15-10-7-16-17-5-43 12zm-163 877q206-36 351-189-3-3-12.5-4.5t-12.5-3.5q-18-7-24-8 1-7-2.5-13t-8-9-12.5-8-11-7q-2-2-7-6t-7-5.5-7.5-4.5-8.5-2-10 1l-3 1q-3 1-5.5 2.5t-5.5 3-4 3 0 2.5q-21-17-36-22-5-1-11-5.5t-10.5-7-10-1.5-11.5 7q-5 5-6 15t-2 13q-7-5 0-17.5t2-18.5q-3-6-10.5-4.5t-12 4.5-11.5 8.5-9 6.5-8.5 5.5-8.5 7.5q-3 4-6 12t-5 11q-2-4-11.5-6.5t-9.5-5.5q2 10 4 35t5 38q7 31-12 48-27 25-29 40-4 22 12 26 0 7-8 20.5t-7 21.5q0 6 2 16z" fill="#fff"/></svg>
+    </a></li>
+  </ul>
+
+  <span class="Copyright">
+    Created by <a href="http://macarthur.me">Alex MacArthur</a>
+  </span>
+
+</footer>
+
+    <script src="//code.jquery.com/jquery-3.0.0.min.js"></script>
+<script>!function(t,e){"use strict";var i=t(document);t.fn.typeIt=function(e){return this.each(function(){var i=t(this);i.data("typeit",new t.typeIt(i,e))})},t.typeIt=function(i,s){this.d={strings:[],speed:100,deleteSpeed:e,lifeLike:!0,cursor:!0,cursorSpeed:1e3,breakLines:!0,breakDelay:750,startDelay:250,startDelete:!1,loop:!1,loopDelay:750,html:!0,autoStart:!0,callback:function(){}},this.queue=[],this.queueIndex=0,this.hasStarted=!1,this.inTag=!1,this.stringsToDelete="",this.style='style="display:inline;position:relative;font:inherit;color:inherit;"',this.s=t.extend({},this.d,s),this.el=i,this._init()},t.typeIt.prototype={_init:function(){this.el.find(".ti-container, .ti-cursor, .ti-placeholder").remove(),this._elCheck(),this.s.strings=this._toArray(this.s.strings),this.el.html('<i class="ti-placeholder" style="display:inline-block;width:0;line-height:0;overflow:hidden;">.</i><span '+this.style+' class="ti-container"></span>'),this.tel=this.el.find("span"),this.insert=function(t){this.tel.append(t)},this.s.startDelete&&(this.tel.html(this.stringsToDelete),this.queue.push([this["delete"]])),this._generateQueue(),this._kickoff()},_kickoff:function(){this._cursor(),this.s.autoStart?this._startQueue():this._isVisible()?(this.hasStarted=!0,this._startQueue()):i.on("scroll",function(){this._isVisible()&&!this.hasStarted&&(this.hasStarted=!0,this._startQueue())}.bind(this))},_generateQueue:function(){for(var t=0;t<this.s.strings.length;t++)if(this.queue.push([this.type,this.s.strings[t]]),t<this.s.strings.length-1){var e=this.queue.length;this.queue.push([this.s.breakLines?this["break"]:this["delete"]]),this.s.breakLines&&(this.queue.splice(e,0,[this.pause,this.s.breakDelay/2]),this.queue.splice(e+2,0,[this.pause,this.s.breakDelay/2]))}},_startQueue:function(){this._to(function(){this._executeQueue()}.bind(this),this.s.startDelay)},type:function(t,e){e="undefined"==typeof e?!0:e,t=this._toArray(t),e&&(t=this._rake(t),t=t[0]),this.tTO=setTimeout(function(){if(this._setPace(this),this.s.html&&-1!==t[0].indexOf("<")&&-1===t[0].indexOf("</")&&!this.inTag){for(var e=t.length-1;e>=0;e--)-1!==t[e].indexOf("</")&&(this.tagCount=1,this.tagDuration=e);this._makeNode(t[0])}else this._print(t[0]);t.splice(0,1),t.length?this.type(t,!1):this._executeQueue()}.bind(this),this.typePace)},pause:function(t){t=t===e?this.s.breakDelay:t,this._to(function(){this._executeQueue()}.bind(this),t)},"break":function(){this.insert("<br>"),this._executeQueue()},mergeSet:function(e){this.s=t.extend({},this.s,e),this._executeQueue()},_print:function(e){this.inTag?(t(this.tag,this.el).last().append(e),this.tagCount<this.tagDuration?this.tagCount++:this.inTag=!1):this.insert(e)},"delete":function(t){this.dTO=setTimeout(function(){this._setPace();for(var i=this.tel.html().split(""),s=t===e||null===t?i.length-1:t+1,h=i.length-1;h>-1;h--){if(">"!==i[h]&&";"!==i[h]||!this.s.html){i.pop();break}for(var n=h;n>-1;n--){if("<br>"===i.slice(n-3,n+1).join("")){i.splice(n-3,4);break}if("&"===i[n]){i.splice(n,h-n+1);break}if("<"===i[n]&&">"!==i[n-1]){if(";"===i[n-1])for(var r=n-1;r>-1;r--)if("&"===i[r]){i.splice(r,n-r);break}i.splice(n-1,1);break}}break}if(this.tel.html().indexOf("></")>-1)for(var u=this.tel.html().indexOf("></")-2;u>=0;u--)if("<"===i[u]){i.splice(u,i.length-u);break}this.tel.html(i.join("")),s>(t===e?0:2)?this["delete"](t===e?e:t-1):this._executeQueue()}.bind(this),this.deletePace)},_isVisible:function(){var e=t(window),i={top:e.scrollTop(),left:e.scrollLeft()};i.right=i.left+e.width(),i.bottom=i.top+e.height();var s=this.el.outerHeight(),h=this.el.outerWidth();if(!h||!s)return!1;var n=this.el.offset();n.right=n.left+h,n.bottom=n.top+s;var r=!(i.right<n.left||i.left>n.right||i.bottom<n.top||i.top>n.bottom);if(!r)return!1;var u={top:Math.min(1,(n.bottom-i.top)/s),bottom:Math.min(1,(i.bottom-n.top)/s),left:Math.min(1,(n.right-i.left)/h),right:Math.min(1,(i.right-n.left)/h)};return u.left*u.right>=1&&u.top*u.bottom>=1},_executeQueue:function(){if(this.queueIndex<this.queue.length){var t=this.queue[this.queueIndex];this.queueIndex++,this.isLooping&&1===this.queueIndex?this._to(function(){t[0].bind(this)(t[1])}.bind(this),this.s.loopDelay/2):t[0].bind(this)(t[1])}else this.s.loop?(this.queueIndex=0,this.isLooping=!0,this._to(function(){this["delete"]()}.bind(this),this.s.loopDelay/2)):this.s.callback()},_to:function(t,e){setTimeout(function(){t()}.bind(this),e)},_elCheck:function(){!this.s.startDelete&&this.el.html().length>0?this.s.strings=this.el.html().trim():this.s.startDelete&&(this.stringsToDelete=this.el.html())},_toArray:function(t){return t.constructor===Array?t.slice(0):t.split("<br>")},_cursor:function(){if(this.s.cursor){this.el.append("<span "+this.style+'class="ti-cursor">|</span>');var t=this.s.cursorSpeed,e=this;!function i(){e.el.find(".ti-cursor").fadeTo(t/2,0).fadeTo(t/2,1),e._to(i,t)}()}},_setPace:function(){var t=this.s.speed,i=this.s.deleteSpeed!==e?this.s.deleteSpeed:this.s.speed/3,s=t/2,h=i/2;this.typePace=this.s.lifeLike?this._randomInRange(t,s):t,this.deletePace=this.s.lifeLike?this._randomInRange(i,h):i},_randomInRange:function(t,e){return Math.abs(Math.random()*(t+e-(t-e))+(t-e))},_rake:function(t){for(var e=0;e<t.length;e++)if(t[e]=t[e].split(""),this.s.html){this.tPos=[];for(var i,s=this.tPos,h=!1,n=0;n<t[e].length;n++)("<"===t[e][n]||"&"===t[e][n])&&(s[0]=n,h="&"===t[e][n]?!0:!1),(">"===t[e][n]||";"===t[e][n]&&h)&&(s[1]=n,n=0,i=t[e].slice(s[0],s[1]+1).join(""),t[e].splice(s[0],s[1]-s[0]+1,i),h=!1)}return t},_makeNode:function(e){this.tag=t(t.parseHTML(e)),this._print(this.tag),this.inTag=!0}},t.fn.tiType=function(s){var h=t(this).data("typeit");return h===e?i:(h.queue.push([h.type,s]),this)},t.fn.tiDelete=function(s){var h=t(this).data("typeit");return h===e?i:(h.queue.push([h["delete"],s]),this)},t.fn.tiPause=function(s){var h=t(this).data("typeit");return h===e?i:(h.queue.push([h.pause,s]),this)},t.fn.tiBreak=function(){var s=t(this).data("typeit");return s===e?i:(s.queue.push([s["break"]]),this)},t.fn.tiSettings=function(s){var h=t(this).data("typeit");return h===e?i:(h.queue.push([h.mergeSet,s]),this)}}(jQuery);</script>
+<script>"use strict";var Promo={examples:{$example1:$("#example1"),$example2:$("#example2"),$example3:$("#example3"),$example4:$("#example4")},els:{sectionList:$(".SectionList")},init:function(){this.setHeaderSize(),this.smoothScroll(),this.buttonResets(),this.headerTyping(),this.mobileMenu(),this.showCode(),this.fixedMenu(),this.demoForm(),$(window).on("load",function(){this.sectionHeaders(),this.example1(),this.example2(),this.example3(),this.example4()}.bind(this))},sectionHeaders:function(){$("#body").find("section").find("h2").typeIt({speed:50,autoStart:!1}),$("#docsMain").find("section").find("h3").typeIt({speed:50,autoStart:!1})},setHeaderSize:function(){$("#header").height($(window).height())},headerTyping:function(){$("#typeit-box").typeIt({speed:100,startDelay:900,callback:function(){$("#typeit-box-code-link").addClass("is-visible")}}).tiType("A jQuery pl").tiPause(500).tiDelete(12).tiPause(500).tiType("The <strong>most versatile</strong> jquery").tiPause(200).tiDelete(5).tiType("Query typing plugin on the net.").tiPause(500).tiDelete(11).tiPause(350).tiType("on the ").tiPause(600).tiType("<em>planet.</em>")},example1:function(){this.examples.$example1.typeIt({strings:"This is a simple string.",speed:50,autoStart:!1})},example2:function(){this.examples.$example2.typeIt({strings:["This is a great string.","But here is a better one."],speed:50,breakLines:!1,autoStart:!1})},example3:function(){this.examples.$example3.typeIt({strings:["This is a great string.","And here we have another great string."],speed:50,breakLines:!0,autoStart:!1})},example4:function(){this.examples.$example4.typeIt({speed:50,autoStart:!1}).tiType("Wll").tiPause(500).tiDelete(2).tiType("ell, ").tiPause(1e3).tiType("I guess I'm typing..").tiBreak().tiPause(750).tiType(" but I don't really know what to say").tiSettings({speed:700}).tiType("...").tiPause(750).tiSettings({speed:50}).tiDelete().tiType("IS THAT SO <strong>WRONG??</strong>")},buttonResets:function(){var e=$("section");e.on("click","#btn-example1",function(){void 0!==Promo.examples.$example1.data("typeit")&&Promo.examples.$example1.removeData("typeit"),Promo.examples.$example1.html(""),Promo.example1()}),e.on("click","#btn-example2",function(){void 0!==Promo.examples.$example2.data("typeit")&&Promo.examples.$example2.removeData("typeit"),Promo.examples.$example2.html(""),Promo.example2()}),e.on("click","#btn-example3",function(){void 0!==Promo.examples.$example3.data("typeit")&&Promo.examples.$example3.removeData("typeit"),Promo.examples.$example3.html(""),Promo.example3()}),e.on("click","#btn-example4",function(){void 0!==Promo.examples.$example4.data("typeit")&&Promo.examples.$example4.removeData("typeit"),Promo.examples.$example4.html(""),Promo.example4()})},demoForm:function(){$("#iSpeed").val("100"),$("#iBreakDelay").val("750"),$("#iCursorSpeed").val("1000"),$("#iStartDelay").val("250"),$("#iLoopDelay").val("750"),$("#TIInput").on("click","#TISubmit",function(e){e.preventDefault();var t=$("#TIOutput");t.html("");var i,o=[],a=$("#stringTI");if(""===a.val())o="You didn't enter a string!";else{i=a.val().split("\n");for(var s=0;s<i.length;s++)void 0!==i[s]&&null!==i[s]&&""!==i[s]&&o.push(i[s])}var l=a.val()?38*o.length+40:75,n=$("#iSpeed").val(),r="true"===$("#iHTML").val(),p="true"===$("#iLifeLike").val(),m="true"===$("#iCursor").val(),u=$("#iCursorSpeed").val(),c="true"===$("#iBreakLines").val(),h=$("#iBreakDelay").val(),d=($("#iBreakStart").val(),$("#iStartDelay").val()),x="true"===$("#iLoop").val(),y=$("#iLoopDelay").val(),f="true"===$("#iStartDelete").val();$("#tempText").animate({opacity:0}),f&&($("#TIOutput").html(a.val()),o=[]),$("#TIOutputBox").animate({height:l},function(){$("html, body").animate({scrollTop:$("#TIOutputBox").offset().top-200},800),setTimeout(function(){t.typeIt({strings:o,speed:Number(n),lifeLike:p,cursor:m,cursorSpeed:Number(u),breakLines:c,breakDelay:Number(h),startDelay:Number(d),loop:x,loopDelay:Number(y),html:r,startDelete:f})},800)})})},smoothScroll:function(){$("a[href*='#']:not([href='#'])").on("click",function(){if(location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")&&location.hostname==this.hostname){var e=$(this.hash);if(e=e.length?e:$("[name="+this.hash.slice(1)+"]"),e.length)return $("html,body").animate({scrollTop:e.offset().top},300,function(){Promo.els.sectionList.removeClass("is-open"),history.pushState("",document.title,window.location.pathname)}),!1}})},mobileMenu:function(){$(".Docs-sidebar");$(".Docs").on("click","#menu-toggle",function(){Promo.els.sectionList.toggleClass("is-open")})},fixedMenu:function(){var e=Promo.els.sectionList;if($(window).width()>600&&e.length){var e=Promo.els.sectionList,t=$(".Main--docs"),i=e.offset().top,o=e.outerWidth();$(window).scroll(function(){$(this).scrollTop()>i?(e.addClass("is-fixed").css("width",o),t.css("margin-left",o)):(e.removeClass("is-fixed").css("width",""),t.css("margin-left",""))})}},showCode:function(){var e=$("#header"),t=$("#typeit-box-code");e.on("click","#typeit-box-code-link",function(e){t.addClass("is-visible")}),e.on("click","#typeit-box-code-close, #typeit-box-code",function(e){t.removeClass("is-visible")})}};$(document).ready(function(){Promo.init()}),$(window).on("resize",function(){Promo.setHeaderSize()});</script>
+
+  </body>
+
+</html>

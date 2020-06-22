@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta property="og:title" content="makemapart.com">
+    <meta property="og:description" content="Create your own colorful map art of anywhere in the world">
+    <meta property="og:image" content="https://makemapart.com/static/assets/home/mock2.jpg">
+    <meta property="og:url" content="https://www.makemapart.com">
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="makemapart">
+    <meta property="fb:app_id" content="605601626622806" />
+    <meta name="keywords" content="Custom Maps, Custom Map, Customized Map, Map Poster, Personalized Posters, Custom Posters, Make Your Own Poster, Create Map Posters, Map Poster, Create Poster Online">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>MakeMapArt</title>
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="icon" href="<%= BASE_URL %>icon-logo.png">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ['Roboto:100,300,400,500,700,900']
+        }
+      });
+    </script>
+
+<!--
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
+-->
+      <link type="text/css" rel="stylesheet" href="https://cdn.materialdesignicons.com/2.5.94/css/materialdesignicons.min.css">
+    <!--
+    <link rel='stylesheet' href='static/lib/simpleLightbox/simplebar.css' />
+-->
+
+      <script type="text/javascript" src="/static/lib/jquery-3.2.1.min.js"></script>
+
+    <!-- test the simple the tooltips for the theme names -->
+    <!-- todo remove from here ? -->
+    <script type="text/javascript" src="/static/lib/marctooltips/MarcTooltips.js"></script>
+    <link type="text/css" rel="stylesheet" href="/static/lib/marctooltips/MarcTooltips.css" media="all"/>
+
+    <!-- lightbo-->
+    <!--
+    <link type="text/css" rel="stylesheet" href="/static/lib/modulobox/modulobox.min.css">
+-->
+    <link type="text/css" rel="stylesheet" href="/static/assets/colourschemes/themes.css">
+
+    <!--typing animation-->
+    <!--
+    <script src="/static/lib/typeit/typeit.js"></script>
+    -->
+
+    <!-- page tour-->
+     <!--
+      <link href="static/lib/pagetour/css/ptjs.min.css" rel="stylesheet">
+      <link href="static/lib/pagetour/themes/classic.min.css" rel="stylesheet">
+-->
+  <!--
+      <script src="static/lib/pagetour/vendors/jquery-ui-1-12-1.min.js"></script>
+      <script src="static/lib/pagetour/js/ptjs.min.js"></script>
+-->
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but this site doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+
+    <!-- https://developers.facebook.com/docs/javascript/quickstart-->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId            : '605601626622806',
+          autoLogAppEvents : true,
+          xfbml            : true,
+          version          : 'v3.2'
+        });
+      };
+    </script>
+    <!--
+    <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+    -->
+
+    <!-- animate on scroll-->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- slider - only used on home apage -->
+    <!--
+    <link rel="stylesheet" type="text/css" href="static/lib/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="static/lib/slick/slick-theme.css"/>
+    <script type="text/javascript" src="static/lib/slick/slick.min.js"></script>
+-->
+
+    <!-- MOVE TO PREVIEW-->
+
+    <!-- try Leaflet -->
+    <!--
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+    -->
+    <!--
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+       -->
+    <!-- mapbox -->
+    <!--<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>-->
+    <!--<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />-->
+
+    <!-- mapbox geocoding , still need this? -->
+    <!--<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.2.0/mapbox-gl-geocoder.min.js'></script>-->
+    <!--<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.2.0/mapbox-gl-geocoder.css' type='text/css' />-->
+
+    <!-- places api search box, google api alternative  -->
+
+    <!--<script src="https://cdn.jsdelivr.net/npm/places.js@1.16.1"></script>-->
+
+    <!-- MOVE TO CHECKOUT-->
+    <!-- paymnets -->
+    <!--<script src="https://js.stripe.com/v3/"></script>-->
+
+
+
+       <!-- Plugin CSS -->
+    <!--
+    <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.5.1/css/OverlayScrollbars.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.5.1/js/OverlayScrollbars.js"></script>
+-->
+
+    <!-- colour picker not used -->
+    <!--
+    <link rel='stylesheet' href='static/maptest/spectrum.css' />
+    -->
+
+        <!--
+        <script src="/static/maptest/glfx.js"></script>
+        <script src="/static/maptest/webgl-utils.js"></script>
+        -->
+
+    <!--
+        <script src="/static/maptest/webgl-lessons-helper.js"></script>
+       -->
+        <!-- vertex shader -->
+    <script id="colourmap-vertex-shader" type="x-shader/x-vertex">
+attribute vec2 a_position;
+uniform vec2 u_resolution;
+uniform float u_x;
+uniform float u_w;
+
+void main() {
+   // convert the rectangle from pixels to 0.0 to 1.0
+   vec2 p = a_position;
+   p.x = p.x*u_w + u_x;
+   vec2 zeroToOne = p ;
+   // convert from 0->1 to 0->2
+   vec2 zeroToTwo = zeroToOne * 2.0;
+   // convert from 0->2 to -1->+1 (clipspace)
+   vec2 clipSpace = zeroToTwo - 1.0;
+   gl_Position = vec4(clipSpace * vec2(1, -1), 0, 1);
+}
+</script>
+
+
+    <!-- fragment shader -->
+    <script id="colourmap-fragment-shader" type="x-shader/x-fragment">
+    precision mediump float;
+
+    uniform vec3 u_colour; //[1,1,1]
+
+    void main()
+    {
+      // gl_FragColor = vec4(1.0,0.0,0.0,1.0);
+       gl_FragColor = vec4(u_colour,1.0);
+
+     }
+</script>
+
+
+    <!-- MAP vertex shader , used for rendering -->
+    <script id="map-vertex-shader" type="x-shader/x-vertex">
+attribute vec2 a_position;
+attribute vec2 a_texCoord;
+
+uniform vec2 u_resolution;
+
+varying vec2 v_texCoord;
+
+void main() {
+   // convert the rectangle from pixels to 0.0 to 1.0
+   vec2 zeroToOne = a_position / u_resolution;
+
+   // convert from 0->1 to 0->2
+   vec2 zeroToTwo = zeroToOne * 2.0;
+
+   // convert from 0->2 to -1->+1 (clipspace)
+   vec2 clipSpace = zeroToTwo - 1.0;
+
+   gl_Position = vec4(clipSpace * vec2(1, -1), 0, 1);
+
+   // pass the texCoord to the fragment shader
+   // The GPU will interpolate this value between points.
+   v_texCoord = a_texCoord;
+}
+</script>
+
+    <!-- fragment shader, used for map preview rendering -->
+    <script id="map-fragment-shader" type="x-shader/x-fragment">
+    precision mediump float;
+    //precision highp float;
+    //precision highp sampler2D;
+
+    // our texture
+    uniform sampler2D u_image;
+    uniform sampler2D colourmap;
+    uniform sampler2D noisemap;
+    uniform float noisemapHeight;
+    uniform float u_variation;
+    uniform vec3 watercolour; //[1,1,1]
+    uniform vec3 roadcolour;  //[1,1,1]
+    uniform vec3 bgcolour;  //[1,1,1], used for animation start white
+    uniform float u_segmentShowPercentage; //0-1,  where 1 = full, used for animation
+
+    uniform float u_roadAlpha; //0-1,  where 1 = full, used for animation
+    uniform float u_waterAlpha; //0-1,  where 1 = full, used for animation
+    uniform float u_segmentAlpha; //0-1,  where 1 = full, used for animation
+
+    // the texCoords passed in from the vertex shader.
+    varying vec2 v_texCoord;
+
+    void main()
+    {
+        vec3 WHITE = vec3(1,1,1);
+
+        vec3 watercol = watercolour;// vec3(1,1,1);
+        vec3 roadcol = roadcolour;//vec3(1,1,1);
+        watercol = watercol*u_waterAlpha + WHITE*(1.0-u_waterAlpha);
+        roadcol = roadcol*u_roadAlpha + WHITE*(1.0-u_roadAlpha);
+
+       vec4 srcCol = texture2D(u_image, v_texCoord).rgba;
+
+        float shapeID0 = (srcCol.r);
+       float shapeID1 = (srcCol.g)/(1.0);
+       float ratio = (srcCol.b)/(1.0);
+
+        // 2 values share the same channel (4 bit each), split these into water and segment ratio
+        float a = ( srcCol.b*255.0);
+        // divide by 15 instead 16 as values goes between 0 - 15
+        float waterf = floor(a / 16.0) / 15.0;
+        ratio= mod(a, 16.0)/15.0;
+
+        float variationRatio = (u_variation )/noisemapHeight;
+       float ramp0 = texture2D(noisemap, vec2(shapeID0 ,variationRatio)).r;
+       float ramp1 = texture2D(noisemap, vec2(shapeID1 ,variationRatio)).r;
+       vec3 col0 =  texture2D(colourmap, vec2(0.0 + ramp0  ,0)).rgb;
+       vec3 col1 =  texture2D(colourmap, vec2(0.0 + ramp1 ,0)).rgb;
+     // vec3 col = texture2D(colourmap, vec2(0.0 + shapeID0 ,0)).rgb;
+        vec3 col = col0*ratio + (col1)*(1.0-ratio);
+        col = (u_segmentShowPercentage >= ramp0) ? col : vec3(1.0,1.0,1.0);
+        col = col*u_segmentAlpha + WHITE*(1.0-u_segmentAlpha);
+
+       // add the water
+      // col = waterf*watercol + (1.0-waterf)*col;
+       // add the road ontop
+       float roadf = srcCol.a;
+      // col = roadf*roadcol + (1.0-roadf)*(col);
+       col = waterf*watercol + roadf*roadcol +  (1.0-waterf- roadf)*col; // this helps with the transparency at the borders between road and water. it should hide all the segmentt colour uder
+
+       gl_FragColor = vec4(col,1.0);
+     }
+</script>
+
+    <!-- lightbox-->
+    <script type="text/javascript" src="/static/lib/modulobox/modulobox.min.js"></script>
+
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+
+
+
+  </body>
+</html>

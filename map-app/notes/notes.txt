@@ -1,0 +1,1289 @@
+todo
+
+-----------------------------------------------------------------------------------
+-- TO DO ---------
+-----------------------------------------------------------------------------------
+
+min required:
+
+- theme - lighten any dark water colours
+- test new prints with themes/sharpen (1.25-1.5 double check this)
+- take photos and add the close-up images x 2
+- header image - choose the final version - single framed vs .. ?
+- header image - make mobile version and set in html
+
+- how important is this??
+  - allow for sandbox orders from the live site ?
+  - deploy to staging  - that uses the sandbox values in the config - / staging.{site}.com?
+  - allow for sandbox payments ? - this can be done from the dev env - no change?
+  - allow for sandbox fulfillment orders ? - this is just to test the upload and api, can be done from the dev env..
+
+
+-----------------------------------------------------------------------------------
+-------- NICE TO HAVE ---------
+-----------------------------------------------------------------------------------
+
+Future Features:
+- home page - editor image - add a print behind to show the editor and the finished map together
+- home - extra grid of info for secure payments, money back garantee
+- make floating nav appear on scroll - not required for now..
+- under the hood page/section? - show an example of the segment breakdown (single image). At the end?
+- quiz - top 10, mutiple choice?
+- (nice-to-have) investigate - mapEditor, autoscroll to show as much of the dropdown panel
+- (nice-to-have) mapEditor - dark/light theme switch  ?
+
+-----------------------------------------------------------------------------------------------------
+
+sections?
+ - header
+ - theme copy (type 1)
+ - theme circles image - full width thin of the themes svgs in circles in a grid
+ - theme gif -  half cut, showing a sequence of different themes (3) ?
+     - slider with example theme buttons
+     - full test component with mapWidget?
+ - copy?
+ - example slideshow - shows mocked images
+ - details copy
+ - close up with pencil (image/s)
+ - editor
+ - customize now
+
+
+
+-----------------------------------------------------------------------------------
+-- DONE ---------
+-----------------------------------------------------------------------------------
+
+- basemapEditor- enalarge map view for when the hieght is small (top,bottom, transform)
+   calculate it based on the area availiable. based on the height + ratio -> calc the canvas w.
+   if the w < space avail then expand out
+
+
+---------------------editor -  simple editor
+- optimise loading of js file on demand - ColourExtractTool (colourthief, MedianCut)?
+
+- write text colours to  export image
+- write preview colour to export image
+- colour btns for text
+- colours btns for preview
+-(done) add black/white swatches
+-(done) add average color swatch
+-(done) add quick swatches
+-(done) hide editor in the normal mode. only show
+-(done) remove error on themeIcon
+- (done)remove erorr on ThemeView
+-(done) add all editortools routes for basemap
+-(done)remove error on editor events
+-(done) colour picker from image
+-(done )median-cut / k-means clustering ... view-source:https://clayto.com/projects/colorpal/
+-(done) proper draggable pop-ups
+- (done) blend edit tool
+-(done) add original colour to blend tool
+-(done) upload image
+-(done) import dominant colours , colorthief
+-(done) export as an image
+-(done) highlight selected segment
+-(done) add swatch grid of all the cols
+-(done) swatch- original colour btn -  this is a clone of the colour when first opened.
+-(done) find a way to save in using the same water and road colour -  offset by 1 r 1 g 1 b for now?
+- (done)road colour btn
+- (done)water colour btn
+-(done) normalise weights button (to 100)
+-(done) investigate how to add a editor??
+-(done) header image - purchase header image (shutterstock)
+- (done) delete - remove the colour from the segment data
+- (done) add colour
+- (done) clone colour - creates a copy of the current selected colour
+(done) ThemeEditor -> colourbutton.click -> emit('editColour', parent, param);
+(done) ColourEditor -> on('editcolour') -> set picker colour via the model data
+
+-(done)navbar - try light colour
+-(done)navbar - try transparent nav on homepage
+-(done)home - turn mock section into  into component?
+-(done) scroll icon on home page
+-(done) home - mock sections - add the other image previews
+
+-(done) investigate how to do a simple offline map to do testing - mapWidget has loadSampleBasemap / loadBasemap(null)
+
+(done)
+- add AOS https://github.com/michalsnik/aos
+vue components ?:
+- create a test fullwidth image section (work-section, work-section-bg)
+- create a text fullwidth section (left text ) - https://uniform.net/work/nuffield-college
+  - use xs-12 sm-7
+
+
+
+(done)
+////// mediaq - adjust the padding
+////// standard section
+// - section -  position relative, and block.  this is the whole section background, colour this, or have a tiled background.
+//  - container - a content area (site-section-content), to bound to the center with max width.
+//    - img -  absolute position the img, (set right: 0 , if anchor to the right), this will float in the background
+//    - div - title, copy text etc..
+// -----------------------------------------------------------
+
+@media only screen and (max-width: 600px) // mobile
+@media only screen and (min-width: 780px) // tablet
+@media only screen and (min-width: 1200px) // large
+@media (min-width: 991px){
+    .section{
+        padding-top: 0px;
+    }
+
+}
+
+
+-(done) home bug - fix mock image size for mobile (remove min width)
+
+- swap out header image
+
+- header - make a mock of search on the left
+https://uniform.net/work/amtico
+https://uniform.net/work/premdor-portfolio
+https://demo.hasthemes.com/brook-preview/index.html
+https://preview.themeforest.net/item/unice-app-landing-corporate-and-portfolio-multipurpose-template/full_screen_preview/24581311?_ga=2.185316329.1975592848.1570633612-293164113.1568669638
+
+large full length design
+-(done) when returning to cart, show voucher edit section is voucherdata exists
+-(done) clear voucher after checkout success
+-(done) checkout - send current total on website to valid.
+ checkout - if price of checkout item differs from current cost then fail it and report back and update total -  show a message,
+(prices have changed, please try again)
+
+-(done) improve edit voucher UI (single row)
+
+- (done) home page -more defined box shadowing on search bar, outline with border?
+- (done) home page - responsive text size - change on resize (media query??)
+- (done) home page -move the text out from the image gallery
+- (done) refactor out the order details part from the OrderPage, this get reused in the order confirmation page
+- (done)change route for confirmation to add the orderid and hash
+
+- (done) Your Order page - add Estimated delivery Date
+
+-(done) Your Order page - try add shipping address
+- (done) Order confirmation - check the order number (remove the 12 at the start) - this was server side
+- (done) Your Order page - add items, start with copying from cart view
+- (done) update findmyorder to work with new endpoint params
+- (done) Your Order page - router - add params via a hashid to the order  - be safe and add order/:orderID/view/:hashID
+
+
+(done) stripe - store.js, request and set publishable key from the server, use this for requests, can do this at the checkout stage?
+- (done) change email branding to mapart for now
+- (done) try adding a print size label to the bottom
+- (done) ProcessingModal - make tick a bit thinner
+- (done) AddedModal - make the tick blue
+- (done) MapEditorPage -hide Show frame preview for now - too confusing?
+
+-(done) gallery images on main page - create new images for mockups
+1 London,
+2 New york,
+3 Tokyo,
+4 Paris,
+5 Stockholm,
+6 Rome ?
+morocco, ??
+San fran ??
+seattle,  ??
+somewhere close up (small town?)
+-(done) mapeditorpage 'Choose Area' -> 'Edit Area'
+-(done) Help pop-up - change next button colour to match new hero color
+-(done) Tick change to same color
+-(done) Shuffle colors help bubble button -> Choose from 1 of 5 color variants
+
+-(done) (fullmappprocessing) get the sizes of the segments that have a cut, and remove any that are too small.
+-(done) (fullmapprocessing) dont bother spliting the smaller segments.
+-(done) (preview processing) try to combine the segments that lie in slivers between highways, take a look at what the segment map looks like
+
+-(done) fix the Tag Line reset button (start at resetTagLineToCoords), the stored basemap lng,lat seems to be wrong
+-(done) investigate why styles are smaller for landscape orientations
+-done - ItemAddedModal fix the thumbnail ratio fo1r 50x70 landscape, currently shows square
+
+- done - align the common files for both server and frontend
+- done - move tick icon next the title
+
+- done - try updating the waiting dialog
+-(done) use the same large toggle switches everywhere
+
+(done) - (PreviewPage) remove the cursor highlight on swtich to cm
+(done) - (MapEditorPage) Show Border text -  underline and make it clickable
+
+done - check the help still work s(border)
+done - save out icons for styles
+done -  add icons to the style button
+
+done - check thumbnail loading  on modal pop-up - leave a placeholder gap with the correct ratio
+ -  get the correct dimension based on the max width, max height, ratio (orientation, printSize), and show indicator in the middle
+ - 1. get ratio,
+- 2. show image over the placeholder area + spinnner
+
+done - check the line thickness for second zoom level, too low?- try old 1.0 value vs a larger one 1.3
+
+done - mapEditor - add a separate section for border
+done - mapEditor - switch ui , try amend or look for a more promanent one that has larger pill bg
+done - mapEditor - look into improving turn on/off frame UI
+done - mapEditor - try option row for border UI
+
+done - search - include street names but also countries ?
+
+done - mockup review - aliasing too heavy for certain zoomlevels where lines are thin (second level, lines too thin?) ?
+
+done - test adding preview thumbnail on the pop-up modal when a map is added
+done - black frame review - try adding a preview section?
+
+done - try adding the black frame to the main editor page as an option to toggle on and off?
+
+done - MockupModal - fix the frame antaliasing artifacts in the scale9grid for the frame
+done - mockup preview - add larger shadow to the side
+done - search - include street names
+done - bug on createNew (previous mapID is still being used) after editing the previous map.
+done -edit the text colors, use darker ones, black where possible?
+done - default border off
+done - default text off too?
+done - move the style1 bar up when border is showing
+
+PREVIEW --------
+increase road threshold to 90
+do segmenting without diagonalsearch
+
+add post step to combine segments lying on the diagonal
+look for a T-shape,
+[G][R][G]
+   [R]
+where R <= 140
+
+FULL -------
+
+find segments that are touching another segment, find the size, if small then set as the small one to be the same id as the large one
+
+- mapSTyleXrtpoer complete
+
+- export a new test json from maptiler website and
+ check the urls are eupto date for
+ tests/mapStyleTemplate.json
+ cloud.maptiler.com,  , maps.tilehosting.com
+
+- update mapStyleExporter with the correct line thickness
+  have one version per
+
+- emails - set proper format (currently shows as 42.5 )
+
+- use new maptile url  full map processing
+- mapServer - admin getOrder - use encypted search params in mysql query
+
+-test switching to braintree/paypal integration
+- order details page - add delivery estimates
+
+- update FAQ
+  -> more about shipping , processing times
+  -> refund request form ??
+
+- refund request form
+  -> enter your order number, email to begin, api call to valid if it exists
+  -> reason for return.. comments, upload photo
+     damaged in transit, incorrect paper size
+  -> go to system and email address?
+
+cms -> tickets list,
+ticket row
+  -> orderID (get customer details incl email..)
+  -> reason, comments, attachments
+  -> status  - open,  , resolved
+--------
+
+FEATURES
+- change preview mockup to an actual photo mock
+- try adding some preview icons to the style buttons (png)?
+
+- costs and exchange rates
+3 times the cost + 0.2per
+- vat
+
+SERVER CLEANUP
+- check below works:
+-server - cleanup of images for items that have no map associated after X days, remove basemaps with no map assoicated older than Y days,remove basemap folder
+- move cleanup tasks to separate file
+
+IMAGES/CONTENT/COLOURS
+- update home page assets
+
+TESTING
+- do some full map testings
+- do some example prints via the system (pwinty)
+
+
+FINECE
+- resize all map widths to the same 24"?
+
+------------------------------------------------------------------------------------
+
+- google analytics - check it works
+
+ADVERTISING
+how to advert on facebook - https://blog.hootsuite.com/how-to-advertise-on-facebook/
+facebook pixel to track conversion - https://blog.hootsuite.com/facebook-pixel/
+
+OPTIMISE
+- check that build files gzip;ed - webpack, check performance on mobile vs unzipped
+
+BUGS
+- bug: check error at the end processOrders - not sure what this is, try to cover against this ?
+
+-bug process stopped at 9% after restarting server - not sure why, add a timeout just incase?
+and fail it[maptiler.downloadStaticMap]url: https://maps.tilehosting.com/c/12915062-7dfa-4102-b526-fbd601d7472f/styles/test-39d7f/static/-1.7822500000000048,53.64568244320371,13/993x1344.png?key=QrAJ6Qj4kLYkZ6l90BKB&clearcache=1555336058998
+
+
+
+POLISH / FEATURE_ NICE_TO_HAVE
+- mapServer- graceful stop? - wait for any processses to finish first ?  http://pm2.keymetrics.io/docs/usage/signals-clean-restart/
+
+- mobile home page - look into a different bg image or offset it
+- test change to noto font for unicode support?
+- homepage - type animation - https://preview.codecanyon.net/item/typeit-the-most-versatile-jquery-animated-typing-plugin-on-theplanet/full_screen_preview/16369861?_ga=2.213383124.137818072.1552436862-1664320737.1551402902
+          - more text effects : http://preview.codecanyon.net/item/animated-text-effects-for-visual-composer/full_screen_preview/19502722?_ga=2.254131016.137818072.1552436862-1664320737.1551402902
+- Mobile version - hide the text in the logo?
+- Shake basket when map added
+- Optional Mini caption text - serve as a little reminder of where you went?
+- processingnode - convert to single queue for each process to make logic easier
+- colours - nicest first - adjust orderWeight manually
+- themes switch pagination to control like? - https://vuetifyjs.com/en/components/windows ?
+- update logo graphics
+
+ADMIN_NICE_TO_HAVE
+- audit table for admin actions ( editshipping, reprocess, submit)
+  columns (event (str), customer_orderID, versioned_customer_orderID )
+  customer_order row on edit -> move olddata to versioned table
+  (restore old version?)
+
+
+GENERAL FEATURES - NICE TO HAVE
+- set default currency based off ip https://ipstack.com/product - nice -to have - default usd
+- processing modal - notify email when complete  (nice-to-have)
+- share your creation and we'll send you a little digital gift as a thank you?
+   show example of segmented map
+- feature: add copyright text location to the full images?
+- tweet with image - https://medium.com/@carolynmcneillie/how-to-embed-an-image-in-a-custom-click-to-tweet-link-5d3631eec790
+Preview Mocks - Confirmation Page - add mock-ups of the maps user bought + share?
+Preview Mocks - Add preview mock-up on click on cart/checkout?
+
+OPTIMSE _ NICE TO HAVE
+- tooltips - optimise - reuse the same tooltip element for all? (at the moment it creates multiple )
+
+REFACTOR - NICE TO HAVE
+- separate out admin app apis into a different node app?
+    - this would not include jobs or anything in memory
+
+
+home page references:
+https://www.circlestudio.co/pages/cpro-case-feature
+
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+Done
+- move the border button to the top and make more promenet
+- wheres/find my order page (email and order number) -
+ - > display status,tracking details
+ - > api call /findMyOrder ... select * from cust_order where email=?, orderID=?
+- uploadshippingRates -  delete rows before addig
+- add minEstShippingDays, maxEstShippingDays to checkout
+- update gallery captions
+-reorder colours so a bright one is first like sea sunset
+- mapEditorPage - reset location button on textfield3
+- add arrow animation to the next button
+- Home Page - update in-situ editor screenshots (desktop / mobile) on the right side. One step for now.
+- recache colours from db every x minutes
+- test: test order fits this for the max lengths for each field
+- update colour themes with correct names
+--setup ssh auth on processingnode
+- copy over the private/public keys to laptop
+- copy ssh keys to somehwere safe on C drive
+- ssh login with key, try: https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-debian-9
+- phpmyadmin - remove root user
+- phpmyadmin - change url address to something more obscure?
+- admin panel - change url address to something more obscure?
+- email setup  - support@makemapart.com
+- email setup  - add alias to hello@makemapart.com
+- fix fade in map disppear on mobile - check if this is an issue
+- mapPreviewPage - reset page after processing error
+ admin - some dashboard pages for basemap,map stats  -  to see the list of the best colours and allow reorder?
+  - theme, border, styleID, printSize, orientation, zoom level
+  - admin site (order page) - edit shipping address , email (before it goes out) ?
+- admin - page for order/money stats
+- admin - Order details add  amount paid. status, tracking info and shipment,
+- admin app setup online
+- admin site - remove register from server.js - should be created by hand in sql
+admin - Update order address - this needs to go to the devliery company
+- admin site - put api calls for orders into store dispatch?
+- mobile home page - move up
+- aws -  test removal of folder
+
+-server- clean of old cart items method (more than x days)
+//get all cart ids older than X days && !a purcahsed order, for each cartid:
+basemap rows - remove where cartID = cartID
+map rows -   remove where cartID = cartID
+cart - remove where cartID = cartID
+-- remove folder for cartID
+- fix thhe mobile border on the type any location textfield - or make it with no border
+- add separate label field to themes and update script
+-safari Refused to execute jquery as script because "X-Content-Type: nosniff" was given and its Content-Type is not a script MIME type
+- update ico with correct logos
+- email - update email logo with current one, host it online.
+change checkbox to :  By proceeding you agree to the Privary Policy and the Terms.?
+- create mockup dialog
+- test with a couple different scenes
+Preview Mocks - Share to facebook -  facebook sdk image share - (FB.UI) https://stackoverflow.com/questions/48205709/sharing-different-image-and-content-on-facebook-through-same-page
+Preview Mocks - upload mock api  -store?
+- processingModal - (bug?) test close button works correctly or remove it
+- Navbar - add optional messaging slot on the left - like limited offers
+- less intrusive privacy pop-up, dont grey out.
+-handle server error event when db closed (test by turning of mamp)
+  Error: Connection lost: The server closed the connection.
+    at Protocol.end (/Users/davidhoe/map-site/map-site-backend/server/node_modules/mysql/lib/protocol/Protocol.js:112:13)
+    at Socket.<anonymous> (/Users/davidhoe/map-site/map-site-backend/server/node_modules/mysql/lib/Connection.js:97:28)
+- design border around the print dimension. transform w,h , try scale9
+- test with encoding the canvas scene to dataurl and use as src
+Preview Mocks - scalable Widget test (svg or div)
+- MapEditor - add back sharpen filter on mapWdiget for desktop
+- bug - after cart complete, homepage search does not trigger map region update
+- bug - clear map/basemap store data after checkout
+- processmap - accomodate for PAPERSIZE_20x28 size
+- Map Editor - bigger text on Floating - make it all a bit bigger, make the text larger, bold the title, try upper case - update server renderer
+- Map Editor - try third option with faded background- update server renderer
+- bug - mapserver-  fix admin node page api
+
+- bug Edge - home header image doesnt show - test this
+- bug - edge - overflow fix
+ - invert green colour on the cart add button?
+ - update hero colours on checkout buttons
+-bug - (editor) help last step -  focus highlight is not over button
+-bug - (preview) help last step -  not showing anymore
+- bug - MapEditor- map initial size is a slightly smaller size, on resize then it makes it bigger
+- bug - maps dont show up on mobile - remove fade to check
+-add initial search bar on home page to begin
+- home images - try  v-img for home page - https://vuetifyjs.com/en/components/images
+- make home page background non-white so that on load is shows a colour (mapiful)
+-better lightbox?
+http://preview.codecanyon.net/item/slim-lightbox-plugin/full_screen_preview/23173759?_ga=2.37768554.814677007.1554407093-938130582.1552603792
+https://codecanyon.net/item/modulobox-nextgen-lightbox-plugin-for-wordpress/20014614?s_rank=10
+ - Map Editor - test with theme name at the bottom
+- tooltips - disable on mobile ?
+- Map Editor - lower the amount of whitespace under border option
+- fix the pop-up tooltip  y alignment
+- fix the pop-up tooltip not showing on half the colours (make ids more unique )
+- reset move processing model scroll to top on open
+- MapPreview -fade in the panel content on first show
+- MapPreview - before moving to the next page (fadeout content) and move the Customize Button to the top - turn it grey
+- MapPreview - Customize button make it the same style as the panel header
+- Map Editor - add step one at the top to return back
+ - Map Editor - remove the current Edit Map button
+ - MapPreviewPage -  metric units text ->  ‘switch to inches’.. / cm..   metric units on the right side top?
+ - Home Page - remove X from the caption. left align it
+- MapPreview (mobile) - Limit dropdown to 2 for mobile. reduce the height of the tab section
+ - Global - primary colour theme -  lighter colour
+ - MapPreview/EditorPage -  different colour for add to cart, something brighter now  - orange question?
+ - Home page -change the top header to a different colour (dark, reverse colours)
+- encode colour scheme svgs as dataURI css file
+- use encoded theme dataURIs
+- email - update initial email styling for tracking details
+- move scroll bar to top on first enter processing modal - to test
+- (bug) MapEditorPage - disable previously selected tab on reenter
+- email - add border to the thumbnail images (box-shadow not supported on gmail)
+- email - add card type to receipt and last four digits
+- processingModal - test adding theme name
+- processingModal - use same theme pagable UI as the mobile version?
+- processingModal - auto scroll to bottom when selecting a theme (mobile)
+- processingModal - scrollbar styling  (add class customscroll
+- to test -  feature: mapServer.js /submitOrder - add orderID ref to stripe charge
+- fix cart summary layout, long text cuts off the image - VIMAge?
+- (was hotreload) bug fix basemap not updating when editing an existing map (step to reproduce -> edit map from cart, change area, then customize)
+- add padding to the sides
+- update formatting
+  https://reallygoodemails.com/category/transactional/receipt/
+- processing modal - add colour swatches and test map  (nice-to-have) ?
+- larger mobile cart buttons
+- add price to mobile Customzie button
+- resize tab buttons to fit for small mobile (320px)
+- try setting colours from theme for map loader
+- feature - MapEditorPage - try map click to shuffle colours or change them
+- MapEditorPage - add nicer loader for mapwidget
+- PreviewPAge- add timeout 400ms before showing inner previewloader
+- click to direct edit from checkout?
+- remove the (custom) label on checkout list
+- remove the scale animation on the header logo
+- previewpage - lazy load with loading either on the route or making a container  https://github.com/vuejs/vue-router/blob/8975db3659401ef5831ebf2eae5558f2bf3075e1/docs/en/advanced/lazy-loading.md
+    https://forum.vuejs.org/t/vue-router-async-component-loading-error-components-never-shown/40618
+-bug - default text not showing in editorpage when user presses customize without typing in a name
+-bug - check why the preview options are reseting when editing
+- show correct cm/in units on printsize
+- save metric/imperial to basemap data
+- save metric/imperial in localstorage- load first enter
+- bug show correct metric units when metric print size chosen
+
+bug - issue with PreviewCreatorPage being created multiple times as its navigated to
+   - https://forum.vuejs.org/t/keep-only-single-component-alive-between-routes/28515/9
+- test if it crashes on mobile only with mapboxgl
+
+- (Editor) edit map in cart, editor/map/mapID, overrideBasemapOptions=true, overrideMapOptions=true   (mapID,basemap   - set basemap,map)
+- (Editor) on refresh editor/map/mapID,  set both, above logic holds
+- (Editor) editor/basemap/basemapID, no mapID,  dont set mapOptions, setBasemap options
+-(Preview) press edit area button (editarea/map/mapID   - basemap should be set, odnt override it )
+-(Preview) on refresh - (editarea/map/mapID -  basemap is not set, set it, map is not set, set it)
+-(Preview) (editor/  createnew flag -   set the basemap,map text)
+ Editor logic:
+  - if route_basemapID != null, set basemapoptions, dont set map optoins
+   - if route_mapID != null  -
+      - set map options and basemap options
+ preview logic:
+   - if createnewflag - set basemap,map text from default
+   - if  route_mapID != null
+      -& if store.map.mapID != route_mapID   - set it from cart
+      -& if store.basemap.basemapID != route_mapID.basemapID  - set it from cart
+
+- passthrough on pointer events
+- add back tutorial on first enter
+- save store currency choice in storageData - arleady done
+editor page - try adding prices to print size buttons
+bug -add tocart button not working, api error
+bug - fix water colour not updating on first showing (shows black)
+bug- AddToCart missing -  shows Update button
+feature - add link url to terms and privacy checkbox
+cleanup - remove CreatePage, Explore page
+- feature: pad in agree to terms and conditions before confirming order
+PreviewPage - check why it takes awhile to load the previewpage on first load (chrome devtool) - add loading somewhere?
+- update preview colour row on images
+- fix colour svg export
+close tour on mobile/desktop switch
+bug- theme accordian is minimised when going from mobile to desktop view
+bug - fix queue processing for cancelled preview
+- iOS/Edge/IE bug - preview page - fix map scrolling - should not move the page when dragging on mobile, try a separate example page to check
+-(indrect fix -disabled support for IE)  IE investigate further issues - button backgrounds showing on nav
+-(indrect fix -disabled support for IE) IE investigate further issues - footer positioning
+-(indrect fix -disabled support for IE) IE investigate further issues - webgl component not working properly
+- cancel button for preview processing?
+lazy load sidebar?
+bug - dont reset values on back to get of existing map
+bug - errorbox doesnt show when first closing then navigating away and back to page
+bug -  prevent double tap on preview create
+attach previewcreate to preview page only
+when node connection lost -  send error back to try again later - clear all items
+bug - when node connection lost -  remove from list
+cancel previewcreate when navigating away from preview page
+-font-family help - roboto
+map server - if no processing nodes - send error back dont queue - check this
+- add proper history routing instead of the # in the path?
+try adding an invisible div in the middle for the pagetour to select
+try an alt tour system - http://demo.masscode.ru/itour/documentation.html#Websites_using_itour
+to see if the map drag help bubble works properly
+add an intro step with image?
+- feature: previewprocessing - be able to set master socket and path outside of the file, e.g in commandline/ env?
+Privacy pop-up - mobile version, place in a column on mobile
+bug - on edit map, values are reset(zoom ,print size, oreitnation)
+processing dialog - replace wih animated tick
+map server - create queue for each node. push client to the shortest queue
+map server - send progress events to all clients in the queue with the data: {update% , clientQueueIndex}
+pop from queue when complete.
+processing dialog - remove queue section have a single section that covers both queueing and processing
+processing dialog - split pie to include queue count + 1.
+processing dialog - timer to animate pie update to target percetange
+processing dialog - investigate how to make it appear quicker
+fix - init proper separate refs for search input
+fix the previewpage map on second entry (no longer responds to controls )
+investigate options for keeping tabbar in original viewport //https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
+Mobile - add tourjs popups for mobile - init a different config if isMobile
+fix relative paths for assets
+history routing setup
+Home page -set the hero header to adjust for mobile, some min(windowheight,MAXHEGIHT) value.
+- add webpage title
+Mobile  - fix scroll to bottom
+Mobile version - fix the places textfield
+Map - switch to the latest leaflet map to fix the drag issue moving the page, and also the issue with scaled maps
+MapEditor - add utils mixin to MapEditor to remove error
+Remove console output only for production
+Mobile version - switch to tabs
+Mobile version - switch to opening tab items at the bottom
+Mobile version - adjust so that the desktop version is not affected
+make sample Mapbox to check why the page moves when its being dragged = touch gesture?
+move shaders out of index and into mapwidget
+move pagetour js out of index
+move gl js files out of index
+Mobile version - implement Preview Page Tabs
+Mobile version - implement Editor Page Tabs
+Mobile version - Tray Component that slides up /down
+Mobile version - Bottom bar component
+Mobile version - Bottom bar tabs buttons
+Mobile version - Bottom bar Next btn
+Mobile version - correct cart width
+Mobile version - hide sidebar
+Mobile version - shift the topbar left x to 0
+Mobile version - move map to the top
+mapServerProcessingNode - fix segmentation overflow on the edges (check for x <0 , x > w), so that segments are different ids
+fix null error on processing model
+when the current editing map is deleted - reset back to new state?
+clear mapID on new Creation
+override text1,text2,text3 for edited maps
+Update logic - fix this for when Editing a region - it currently shows as Add new,, should be an update button
+bug - mapbox map is not being disposed properly - test this?
+bug - basemap data doesn't get set when editing a map - check console logs
+preview/editor page - test out logo on top left / move edit button to bottom
+previewmap - set max size to match EditorPage
+Preview search - set a default place on entering (eg. san fran)
+Preview search - restore the result text when returning back to this page
+
+- optimise: check that sometimes it takes awhile to add to cart - its the upload time to the DigitalOcean Spaces, return first and skip it? - switched to aws
+restore mousehand cursor on themegrid
+Variation button - shake number? make more prominent?
+Remove water/road colours
+help btn - add a bit of margin to the right
+remove currency select on intro for now
+preview/editor page - hide tour on Next Button press
+previewmap - add box shadow to map
+tour - fade out navmenu area on map drag step
+bug - hide any open tour messages on page switch
+Editorpage - Tour logic, open correct accordian before the step,
+Editorpage - block in initial tour for Editor Page
+tour - block in initial tour for Preview Page
+add tour lib - http://jquery-widget.pagetourjs.com/
+bug - find why textfield is showing outlines
+home page- image caption hover effect
+HomePage -  lightbox for images - http://terrymun.github.io/Fluidbox/demo/index.html or  http://sachinchoolur.github.io/lightGallery/demos/
+Fix accordian open on first start - separate toggle method and open
+Cart - properly disable Checkout btn whens theres no items - flashes at the moment
+EditPage Left Menu - add custom scrollbar
+Preview Page Left Menu - add custom scrollbar
+Cart - sudo scrollbar like :  (click ...-> whats new) https://platform.cloudways.com/account/invoice
+Cart - disable main scrollbar on open/ reenable on close
+Cart - total to the botyom
+Cart- discount on the bottom
+Cart - add onclick for quantity +/- button, update on server via debounce
+Places search - update the styling https://community.algolia.com/places/documentation.html#css-classes to make it cleaner https://community.algolia.com/places/
+Cart - remove update-quantity button
+Voucher Code textfield convert to simple input to get it to align properly
+Cart - create another -  show the next discount in here
+Cart - fix heading / close positioning
+Cart - create another -  correct margins
+jump to top when switching links - https://stackoverflow.com/questions/50449123/vue-js-scroll-to-top-of-page-for-same-route
+CartList - update the name to CartSideBar
+Cart - add pulse to the checkout button
+Cart - checkout button - close the sidebar
+Cart- fix checkout button on the bottom
+remove home from bottom links
+update FAQ
+change Heart (made in london) to mdi icon
+Navbar - optional Home logo top left, hidden in the editor pages
+- intro page - create composed images + write copy
+- setup server with ssl cert when domain is ready, use https://check-host.net to check
+https://code.lengstorf.com/deploy-nodejs-ssl-digitalocean/
+- history mode and still allow some pages to be routed correctly
+
+- test previewNodeProcess on separate server?
+- improvement - send back progress after each growfilter update - this is a bit slow for large maps
+-Edge bug /addtocart- fix toblob error with polyfill or alternative base64?
+- IE bug - shows white currently - make it work with IE
+https://stackoverflow.com/questions/52056358/vue-cli-3-project-not-working-on-ie-11
+-bug: make the websocket connection from the webpage work with nginx
+- use clientsocket url instead of temperory api2 url
+- setup processingserver with pm2 to test
+- setup mapServer with pm2 to test
+- save a copy of nginx config with reverse proxy to the api and the socket to the repo
+
+- test latest project from webserver
+- auth section - remove 2nd  db login details from auth/config/main.js
+- admin - Vimage fix on order preview
+- bug: null cartID in submitOrder data from website when first run - its never set
+- checkout - sort cities list in order with main ones at the top, add order field to db table and sort by order
+- add city max char leng , email. postcode
+- admin site (order page) - createdAt, orderUpdatedAt, currencyName, shippingCost
+- admin site (order page) - add address component
+- colours - increment themes on purchased item (submit) - to test
+- encrypt personal details in the db https://gist.github.com/vlucas/2bd40f62d20c1d49237a109d491974eb
+- send curreencyid in submitorder
+-save curreency on switch to localstorage ?
+- mapServer.js /submitOrder - set the correct stripe currency - check this against documentation for "usd","gdp","eur"
+- bug: decrypt confirmation email customer params - to test
+- test confirmation email
+- email - remove pricing from individual items?
+- preview page - open processing modal on Next button click - test this
+- preview page - add zoom level ui first pass - test this
+- mapServer, check for duplicate cartID before creating - to test
+- fix the error on running the webapp - related to commonglobals ?
+- contact page - styling??
+- block in sending confirmation email
+- create confirmation email
+
+-admin site - put api call baseurl in one location - private?
+- admin site - create is_admin permission type , add to db table
+https://scotch.io/tutorials/handling-authentication-in-vue-using-vuex
+- admin site - make a password hash creator page
+- admin - separate out admin into its own node app
+- admin - create global sidebar and add the processing dashboard
+- admin - add auth login
+
+- admin orders page - search
+- admin orders page - filter by statusID
+- admin orders page - default orderby reverse
+- switch to send map to manual pending status once processed.  This needs to be checked
+
+- disable Add To cart until map is loaded
+- check  fullsize images for colour matching and stitching
+- test order sending
+- disable checkout page if no items in cart?
+- empty cart page update : round off button
+- tile server implement stitching for the large format
+- investigate why the tileserver is so slow
+- show please wait before map downloading (currently all white)
+-increase icon size on tick for prcoessing readt
+- upgrade to webpack 4
+
+- optimise vuetify lazy loading, do for each page?
+https://vuetifyjs.com/en/guides/a-la-carte
+https://medium.com/@vladislavs.korehovs/optimizing-vue-vuetify-performance-async-loading-5e13ca43706e
+
+-add in initial explore page
+- add estimated time to processing dialog (proc state - less than < 1, queue state)
+estimatedQueueDuration - to test
+- loading symbol on the mapdemowidget?
+- add to store the shipping showing
+- common getters for support/contact email
+- update the text for the cookie pop-up: To use Medium, you must agree to our Privacy Policy, including cookie policy.
+- free shipping notification under the nav
+- add countries and state js file, use this in the email
+- (checkout) fix the autocomplete on the country, try to select the country?
+- cookie policy toast at the bottom
+-initial currency select modal for choosing the most appripate currney for your area?
+- create table for shipments
+- add values to the node dashboard? last process length, nJobsProcessed, time currently idle
+- add api keys to calls
+- faq section - question and answer?
+
+- cap user zoom in previewpage to whole values (disable scroll) - map.scrollWheelZoom.disable(). ?
+- complete order shipped email - set the correct tracking url
+
+- api for dashboard (list of jobs and nodes)
+- start on preview creator dashboard page - endpoint call and store data
+
+-----------------
+
+INTRO
+
+title, messaging
+map demo widget
+
+benefits
+ - print quality
+ - paper quality
+ - multiple shipping locations and tracked devliery
+
+examples composed & styled around the above
+
+[Explore]
+[Create your own]
+
+------
+
+EXPLORE
+
+Try out some examples of cities from around the world.
+
+tokyo [edit]
+paris [edit]
+london [edit]
+milan [edit]
+san fran [edit]
+la [edit]
+KL [edit]
+
+
+
+
+------------------
+shippingCountry
+
+CountryName: "..."
+CountryID: "..."
+
+------------------
+shippingRate table
+
+countryID: "..."
+shippingName: "Standard (3-10 working days)"
+shippingID: "STANDARD"
+shippingRateUSD: 5.00
+shippingRateGBP: 5.00
+shippingRateEUR: 5.00
+
+script to add shippingRates from excel
+
+API
+- getShippingCountries: select *
+- getShippingRatesForCountryAndCurrency()
+
+
+
+// list of shipping options for countryID
+
+
+- editpage - dont show welcome message when editing
+- preview/editpage -  dont show button pulse until something is edited
+- checkout - add a wait on the next button press
+
+-tooltips
+check overflows
+
+- currency/ shipping location : gdb, usd, euro, other
+add currencyID to the cart table
+add a currency table {currencyID, currencyName = USD, currencySymbol = '$', '£'}
+add other currency Types to the sku   {skuID,...,priceUSD, priceEURO, price.. }
+Make a button on the navbar that displays the current currencyID
+Open a pop-up to currencyChangePopUp - display list of currencys from currency table
+
+store.js - getMapPrice(map), getMapPriceLabel(map), getTotalCartPrice()
+- getCurrnecySymbol() - return  cart[cart.currencyID]
+
+- thumbnails - generate proper thumbs without the frame ?
+
+- upload print file to spaces
+- complete upload to printful api
+- complete the stripe server side
+
+- add a error modal component
+- refactor wait overlay into a component - done
+
+test
+
+- API call get the base map ID and the map params via API call
+- upload themes to db
+
+- get the next job from queue, some job-status flag, mark it as being processed
+- generate the preview map again, this needs to be the exact same process as the one the user sees
+
+- test this vs uploading the image from the user?
+- get the full size basemap
+- do segment processsing
+- compare colours from previewmap
+- save
+- upload to printful
+
+
+------------------------------------------------------------------------
+
+- update the ui on the preview editor
+- full map creation
+
+- city map search,
+- search for city (express)
+- add a table for the map presets   (id | name ) ,
+map ( | cityID )
+
+- intro
+ - examples
+
+- processing queue -> save to queue outside of app ?
+[a, date
+b,c,d,e]
+redis?
+sql?
+
+
+--------------------------------------------------------------------------
+
+bottom fade params
+
+fix the black water colour on first load- happens on edit
+
+init() - loads the common textures, and inits GL does init event
+inModelChanged() - does mapLoaded event - > assetsLoading = false
+
+use cases:
+- map Editor,  load map,  one-way prop set,
+  callbacks loaded, init, theme, resize
+
+- script to upload themes
+- shift over the preview widget to its own component
+- switch to v modals
+
+
+- switch from themeId in cart item to full theme object?
+advantages:
+  no need to wait for themes to load
+  if themes are changed then it doesnt affect the cart objects
+disadvantages:
+  larger field size
+
+
+- add v loader icon - done
+- (mapeditor) wait for themes to load before doing init - done
+- store - load from themes API - done
+- add themesLoaded flag - done
+- add a loader for the themes component - done
+
+
+////////////
+
+- move theme data to store
+- integrate map Editor with theme store
+- temp api to return colour cache
+
+////////////
+
+add a router prop to update/:mapIndex
+load map from index if not null
+
+///////////////////
+// PAGE MODE
+
+Map Editor Page Mode
+store - mode 'add', 'edit'
+add computed: isAddMode(),  isEditMode()
+button dom - v-if="isAddMode"  show 'Add To Cart'  ,  else show 'Update'
+button onclick - if(this.isAddMode) addCurrentMapToCart() , else updateCurrentCartMap()
+
+add store mutations to allow for:
+store.commit('setMapEditorPageMode_Add', basemapID)
+-
+
+store.commit('setMapEditorPageMode_Edit', cartMap)
+-
+
+// make 2 mixins:
+
+store.commit('setMapEditorPageMode_Edit')
+change router to /edit
+
+
+
+///////////////////
+// UPDATE CURRENT MAP
+
+function updateCurrentCartMap() -
+loading = true
+this.$store.dispatch("updateCurrentCartMapItem").then(()=>{
+  loading = false;
+  show the pop up modal - use the same one,
+})
+modal dom -  title switch on mode, message +icon switch on mode
+
+store action - updateCurrentCartItem(context) -
+map = context.state.map
+call to the server /api/update,  body = { map: map }
+on return - commit('updateCurrentCartItem', data)
+
+mapServer.js:
+/api/update -
+mapdata = body.data.map
+// SQL query to UPDATE values WHERE mapID = ?
+return mapdata
+
+API
+
+getBasemap api - go via server to get the address?
+/basemap/ID - return the url of the base folder?
+
+
+
+--------
+
+
+- create checkout form:
+- split into 2 columns for desktop, 1 column for mobile.
+- billing address
+- (tick box) shipping address
+- name, card number ,pay button
+
+// stripe custom form example
+https://jsfiddle.net/ywain/02x8opLy/
+
+- Stub in the other pages, contact, inspire, home (each with navbar and footer)
+
+
+----------
+
+
+ItemAddedModal - open after successful server return 'add To cart'
+- great, would you like to add another or checkout?
+- 2 buttons at the bottom.
+- tick icon, animation?
+
+-----------
+
+basket button with badge (nItems).
+basket goes to cart page.
+
+Cart page
+ - list of items in cart:
+   - change the quantity for each textbox
+   - checkout button
+   - update button
+   - delete item button
+   - clear all button?
+
+Checkout page
+ - forms .. block in for now
+ - temp button that flags
+
+--------------------------------------------------
+
+Add Order Action
+- /add   (db) create session for user if it doesnt exist, add first item
+- data:
+{
+  map:{
+    mapID ?
+    basemapID
+    themeID   - or theme colours?
+    variation
+    waterColour
+    roadColour
+    border
+  }
+  product_sku: "poster24x18"
+}
+
+Centered lng/lat -> getBound(center, zoom, pixelDims).
+
+--------------------------------------------------
+
+Action - createBasemap
+
+- contact db server first, add entry to basemap
+add entry into the map table
+ generate a unique id for both - return this
+
+body
+data{
+  basemap:{
+    basemapID : null
+    zoom   (preview zoom level)
+    orientation
+    paperSize
+    coords - centered vs bound (top left, bottom right)
+    bounds : {topleft, bottomRight }
+  }
+}
+
+Pay Action
+- (db) set paid flag on cart
+
+Remove Order Action
+- (db)
+
+// CUSTOMER SESSION / CART
+cartID
+.. customer details, shipping details, amount paid
+voucher code
+ip?
+
+// SESSION CART ITEMS
+cartID
+cartItemID
+
+// CART ITEM
+quantity
+mapID
+
+// MAP
+mapID
+baseMapID - id of
+lng,lat, theme...
+- created by - userID
+
+// REGION / BASE MAP ID
+baseMapID
+lng,lat, zoom, paperSize
+
+// NOTIFICATIONS
+mapID
+emailAddress
+
+-----
+
+user chooses custom region ->
+generate baseMapID, and a mapID
+- create a user session if it doesnt exist (sessionID )
+- create entry in BASE MAP table.
+- create entry in MAP table and link to basemap and sessionID.
+- link the user to the map to track for how many maps a user makes before buying?
+
+basemap preview gets created, client subscribes to basemapID
+-
+
+-----
+
+if user has registered for notifications, email and delete in table.
+
+----------------------------------------------------------------
+DISTRIBUTED PROCESSING
+
+Make the job allocation distributed across multiple servers.
+How: store pending jobs in a sql table.  This gets poped from via a script.
+
+ Central server has job queue and communicates with workers.
+ Server has a websocket server.
+ Worker connects to server on {ip}, sends an api token for the server to validate. if not then it disconnects the client.
+ It then sends a 'worker avail' message if its not processing, otherwise waits until it is.
+ When worker disconnects, the processing jobs that havent finished should be reallocated (reset status flag).
+ The webpage client socket would get disconnected,
+
+ Option 2: clients sends status when free.  (connection, job queue complete)
+
+row: [ previewID | lng | lat | zoom | orientation | jobState | workerID ]
+jobState = pending, processing, complete and remove it from the job queue.
+
+(wait for threads to be available.)
+1. mark job as processing ->  server/getNextJob
+2. download map - (this might need to wait in another thread?)
+3. process and create preview maps
+4. webpages connect to workers directly for progress updates.
+5. when complete - notify jobserver via websocket
+
+-------------------------------------------------------------------
+
+LocalStorage
+- save basket and maps
+
+REST api -
+
+mapbox style edit
+https://www.mapbox.com/studio/styles/davidh03/cjjcwa8je7f1u2sp8wopr1na2/edit/
+
+// example static basemap calls
+// add 0.1 zoom for it to show the smaller roads at 11.1 in map style renderer
+// london
+https://api.mapbox.com/styles/v1/davidh03/cjjcwa8je7f1u2sp8wopr1na2/static/-0.11400,51.50507,11.1,0,0/600x800@2x?access_token=pk.eyJ1IjoiZGF2aWRoMDMiLCJhIjoiY2phZnduOTdxMThwNzJ3cXVyY2RubDhlMyJ9.Io4YkfT4pvr-740FppvYMg
+// tokyo
+https://api.mapbox.com/styles/v1/davidh03/cjjcwa8je7f1u2sp8wopr1na2/static/139.777197,35.675528,11.1,0,0/600x800@2x?access_token=pk.eyJ1IjoiZGF2aWRoMDMiLCJhIjoiY2phZnduOTdxMThwNzJ3cXVyY2RubDhlMyJ9.Io4YkfT4pvr-740FppvYMg
+// paris
+https://api.mapbox.com/styles/v1/davidh03/cjjcwa8je7f1u2sp8wopr1na2/static/2.342898,48.848872,11.1,0,0/600x800@2x?access_token=pk.eyJ1IjoiZGF2aWRoMDMiLCJhIjoiY2phZnduOTdxMThwNzJ3cXVyY2RubDhlMyJ9.Io4YkfT4pvr-740FppvYMg
+
+option 1:
+1. call the server to generate the 2 preview files.
+  this will take the body params: zoom, long,lat
+  it will request the static map from mapbox api and then execute the segment script
+  it will store the 2 files in a temp location
+  previewmaps/ID/?
+
+  keep the files for recreating it on the server side.
+  Want to match the colours to the final one do this by segmenting the full map
+
+  // delay the callback to stop the user from spamming? this may take a couple minutes.?
+
+  //
+
+  //
+2.
+
+remove
+create Form components:
+ option select buttons
+     - row of buttons, one is selected. data: options=[{key,val}]
+ colour box
+     - similar to colour picker box, but just a button, dispatch onclick event
+ colour picker box
+     - include a pop up colour picker,  dispatch onclick event?
+ theme view
+    - 1.  an image loaded from server. prerender all themes using script, pull from db (ok). caching as tilemap?
+    - 2. (TRY THIS) dynamically draw from data/ test performance?  e.g 10 sets, small canvas area, can be scaled up
+         test scaling canvas (no antialias),
+       for each col()
+       {
+          dx = cellw*i;
+          rect = dx,0,cellw, canvash;
+          //
+       }
+ theme picker, grid of X rows, Y cols.  Simple paging control (prev, next, pageNumber?)
+   -   data - pageIndex, themes, nRows, nCols
+
+   <v-for  j = 0, j < nRows;++j>
+    <v-for  i = 0, i < nCols;++i>
+      n = nRows*nCols
+      index =  pageIndex*n + j*nRows + i;
+      <v-if (index < themes.length),  component theme= themes [index] on-click= buttonclick(index) >
+    </>
+   </>
+
+
+
+---------------------
+initial tests
+* configure accessible static file folder - done
+* static image loading into fake Image from method - done
+* (done) move webgl shaders into a location for script tags (main html file?) - done
+* (done) import js file (webgl-utils) into the correct place. - done
+* load in shaders and test - done
+* add the canvs/scaledCanvas to the .vue component with the id - done
+* test adding controls to the sidebar (map id, themeid, variation id)
+* add model data for above
+
+
+* show correct view on start
+* border option test (on / off ?)
+* text style (none, fade (vertical alpha fade), floating (rectangle),  ..)
+* text 1
+* text 2
+* test how to fix sidebar open/close
+
+* convert to proper component ?
+---------------------
+
+---------------------
+investigate -
+* Mapping service
+* Get stats for locations
+---------------------
+Export db as csv?
+long | lat | zoom | orientation
+
+- Get the % for each zoom level
+- Get the % for each orientation
+- Major Cities - find a list of coords for cities.
+  For each map location, find if its close to a city.  If so mark it.
+  Export a csv of :  city label | count
+  include 'none' count
+
+---------------------
+** start with this
+
+Map Editor Page
+Sidebar
+ - Tabs
+   - Location
+
+      ^^Preset Map, the below defines the map id:
+      - paper size (12x18,18x24,24x36,18x18)
+      - orientation (portrait, landscape)
+      - location (long, lat) ->  list as location name ID
+
+      ^^Custom maps list (map ids)
+      - current map id ** ?
+      - isCustom flag, if true, then lock the paper size, orientation,location?
+        and set the selected map in the custom list
+        if false, then its a preset map and set this active
+
+      [choose your own location] -> open pop-up for email/registration -> choose map pop-up
+
+      Order a custom map - processing fee?
+      Choose map pop-up:
+      orientation
+      paper size
+      location
+      [submit] ->   (server) process map preview -> save to db (mapID | papersize | orientation | location)
+
+   - Colour theme
+      - theme id   **
+      - theme edit? pop-up
+      - water overide option?  Colour picker
+      - road  overide option?  Colour picker
+   - Text Style
+      - style id **  (none, classic, modern)
+      - text 1  (city name, country ?)
+      - text 2  (long,lat)
+      - colour option?
+ - Save button, cost
+
+Map Preview component
+Port over the test code into a .vue file.
+
+-------
+

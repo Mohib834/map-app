@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="test.css">
+    <link rel='stylesheet' href='src/spectrum.css' />
+
+
+</head>
+<body>
+
+variation: <input type="number" name="txt" value=0 onchange="onVariationChange(this.value)"></br>
+themeID: <input type="number" name="themeid" value=0 onchange="onThemeIDChange(this.value)"></br>
+water:<input type='text' id="waterColourInput" />
+road:<input type='text' id="roadColourInput" />
+<input type='text' id="colourInput0" />
+<input type='text' id="colourInput1" />
+<input type='text' id="colourInput2" />
+<input type='text' id="colourInput3" />
+<input type='text' id="colourInput4" />
+<input type='text' id="colourInput5" />
+<input type='text' id="colourInput6" />
+<input type='text' id="colourInput7" />
+<input type='text' id="colourInput8" />
+<input type='text' id="colourInput9" />
+<input type='text' id="colourInput10" /></br>
+
+mapID: <input type="number" name="mapid" value=1 onchange="loadMap(this.value)"></br>
+
+<canvas id="canvas" ></canvas>
+<canvas id="scaledCanvas" ></canvas>
+
+
+
+<!-- vertex shader -->
+<script id="colourmap-vertex-shader" type="x-shader/x-vertex">
+attribute vec2 a_position;
+uniform vec2 u_resolution;
+uniform float u_x;
+uniform float u_w;
+
+void main() {
+   // convert the rectangle from pixels to 0.0 to 1.0
+   vec2 p = a_position;
+   p.x = p.x*u_w + u_x;
+   vec2 zeroToOne = p ;
+   // convert from 0->1 to 0->2
+   vec2 zeroToTwo = zeroToOne * 2.0;
+   // convert from 0->2 to -1->+1 (clipspace)
+   vec2 clipSpace = zeroToTwo - 1.0;
+   gl_Position = vec4(clipSpace * vec2(1, -1), 0, 1);
+}
+</script>
+
+<!-- fragment shader -->
+<script id="colourmap-fragment-shader" type="x-shader/x-fragment">
+    precision mediump float;
+
+    uniform vec3 u_colour; //[1,1,1]
+
+    void main()
+    {
+      // gl_FragColor = vec4(1.0,0.0,0.0,1.0);
+       gl_FragColor = vec4(u_colour,1.0);
+
+     }
+</script>
+
+
+<!-- MAP vertex shader , used for rendering -->
+<script id="map-vertex-shader" type="x-shader/x-vertex">
+attribute vec2 a_position;
+attribute vec2 a_texCoord;
+
+uniform vec2 u_resolution;
+
+varying vec2 v_texCoord;
+
+void main() {
+   // convert the rectangle from pixels to 0.0 to 1.0
+   vec2 zeroToOne = a_position / u_resolution;
+
+   // convert from 0->1 to 0->2
+   vec2 zeroToTwo = zeroToOne * 2.0;
+
+   // convert from 0->2 to -1->+1 (clipspace)
+   vec2 clipSpace = zeroToTwo - 1.0;
+
+   gl_Position = vec4(clipSpace * vec2(1, -1), 0, 1);
+
+   // pass the texCoord to the fragment shader
+   // The GPU will interpolate this value between points.
+   v_texCoord = a_texCoord;
+}
+</script>
+
+
+
+<!-- fragment shader, used for map preview rendering -->
+<script id="map-fragment-shader" type="x-shader/x-fragment">
+    precision mediump float;
+
+    // our texture
+    uniform sampler2D u_image;
+    uniform sampler2D colourmap;
+    uniform sampler2D roadmap; //road and water map
+    uniform sampler2D noisemap;
+    uniform float u_variation;
+    uniform vec3 watercolour; //[1,1,1]
+    uniform vec3 roadcolour;  //[1,1,1]
+
+
+    // the texCoords passed in from the vertex shader.
+    varying vec2 v_texCoord;
+
+    void main()
+    {
+        vec3 roadWaterMapCol = texture2D(roadmap, v_texCoord).rgb;
+
+       vec3 srcCol = texture2D(u_image, v_texCoord).rgb;
+
+       float shapeID0 = (srcCol.r)/(1.0);
+       float shapeID1 = (srcCol.g)/(1.0);
+       float ratio = (srcCol.b)/(1.0);
+
+       float ramp0 = texture2D(noisemap, vec2(shapeID0 ,(u_variation + 0.5)/256.0)).r;
+       float ramp1 = texture2D(noisemap, vec2(shapeID1 ,(u_variation + 0.5)/256.0)).r;
+       vec3 col0 =  texture2D(colourmap, vec2(0.0 + 0.99*ramp0 ,0)).rgb;
+       vec3 col1 =  texture2D(colourmap, vec2(0.0 + 0.99*ramp1 ,0)).rgb;
+
+        vec3 col = col0*ratio + (col1)*(1.0-ratio);
+//vec3 col =col0;
+
+       // add the road map ontop
+       float contrast = 1.0;
+       float roadf = roadWaterMapCol.r;
+       //roadf = (1.0- pow(roadf,contrast));
+       vec3 c = roadf*roadcolour + (1.0-roadf)*(col);
+
+        //
+
+        // add the water, this is blue
+       float waterf = 1.0*(roadWaterMapCol.b );
+
+
+       c = waterf*watercolour + (1.0-waterf)*c;
+
+       gl_FragColor = vec4(c,1.0);
+     }
+</script>
+
+
+<!--
+for most samples webgl-utils only provides shader compiling/linking and
+canvas resizing because why clutter the examples with code that's the same in every sample.
+See http://webglfundamentals.org/webgl/lessons/webgl-boilerplate.html
+and http://webglfundamentals.org/webgl/lessons/webgl-resizing-the-canvas.html
+for webgl-utils, m3, m4, and webgl-lessons-ui.
+-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="spectrum.js"></script>
+<script src="glfx.js"></script>
+<script src="webgl-utils.js"></script>
+<script src="webgl-lessons-helper.js"></script>
+
+<!--
+<script src="test.js"></script>
+-->
+</body>
+</html>

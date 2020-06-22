@@ -1,0 +1,1283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="203c86cd-ebe4-473d-ac17-9d84cff12a3c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/map-app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map-app/public/static/assets/mapwidget/blackframe.png" beforeDir="false" afterPath="$PROJECT_DIR$/map-app/public/static/assets/mapwidget/blackframe.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map-app/public/static/assets/mapwidget/blackframe.psd" beforeDir="false" afterPath="$PROJECT_DIR$/map-app/public/static/assets/mapwidget/blackframe.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map-app/src/components/common/EditorBase.vue" beforeDir="false" afterPath="$PROJECT_DIR$/map-app/src/components/common/EditorBase.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map-app/src/components/common/MapWidget.vue" beforeDir="false" afterPath="$PROJECT_DIR$/map-app/src/components/common/MapWidget.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map-app/src/components/editor/ItemAddedModal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/map-app/src/components/editor/ItemAddedModal.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map-app/src/components/editor/MapEditorPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/map-app/src/components/editor/MapEditorPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map-app/src/components/home/DemoMapWidget.vue" beforeDir="false" afterPath="$PROJECT_DIR$/map-app/src/components/home/DemoMapWidget.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map-app/src/components/previewcreator/PreviewCreatorPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/map-app/src/components/previewcreator/PreviewCreatorPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map-app/src/model/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/map-app/src/model/store.js" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/map-app/node_modules/" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="map-site-new" />
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.7407407">
+      <split-first>
+        <splitter split-orientation="horizontal" split-proportion="0.64700097">
+          <split-first>
+            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+              <file pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/map-app/src/components/editor/MapEditorPage.vue">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="-1484">
+                      <caret line="37" column="38" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
+                      <folding>
+                        <element signature="n#style#0;n#img#0;n#template#0;n#EditorBase#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#v-layout#0;n#template#1;n#template#0;n#EditorBase#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#div#0;n#template#0;n#AccordianPanel#0;n#div#0;n#template#1;n#EditorBase#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#v-text-field#2;n#div#1;n#template#0;n#AccordianPanel#2;n#div#0;n#template#1;n#EditorBase#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#div#1;n#v-layout#0;n#div#1;n#v-btn#0;n#div#0;n#template#0;n#MobileTabBar#0;n#v-layout#0;n#template#4;n#EditorBase#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#label#0;n#v-layout#0;n#v-card-text#0;n#v-card#0;n#v-tab-item#1;n#v-tabs-items#0;n#v-layout#0;n#template#4;n#EditorBase#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#OptionRow#0;n#v-layout#0;n#v-card-text#0;n#v-card#0;n#v-tab-item#1;n#v-tabs-items#0;n#v-layout#0;n#template#4;n#EditorBase#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#v-layout#0;n#v-card-text#0;n#v-card#0;n#v-tab-item#2;n#v-tabs-items#0;n#v-layout#0;n#template#4;n#EditorBase#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#OptionRow#0;n#v-layout#0;n#v-card-text#0;n#v-card#0;n#v-tab-item#2;n#v-tabs-items#0;n#v-layout#0;n#template#4;n#EditorBase#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/map-app/src/model/store.js">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="281">
+                      <caret line="181" column="18" selection-start-line="181" selection-start-column="18" selection-end-line="181" selection-end-column="18" />
+                      <folding>
+                        <element signature="n#!!doc" expanded="true" />
+                        <element signature="e#22#44#0" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/map-app/src/components/home/HomePage.vue">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="251">
+                      <caret line="195" column="49" selection-start-line="195" selection-end-line="196" />
+                      <folding>
+                        <element signature="n#style#0;n#div#0;n#main#0;n#template#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#section#0;n#div#0;n#main#0;n#template#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#v-layout#0;n#section#0;n#div#0;n#main#0;n#template#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#div#0;n#v-layout#0;n#section#0;n#div#0;n#main#0;n#template#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#ScrollingIcon#0;n#div#0;n#v-layout#0;n#section#0;n#div#0;n#main#0;n#template#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#div#0;n#main#0;n#template#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#v-layout#0;n#div#1;n#div#0;n#section#0;n#div#0;n#main#0;n#template#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#div#0;n#main#0;n#main#0;n#template#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#h2#1;n#v-flex#0;n#v-layout#0;n#div#0;n#div#0;n#main#0;n#main#0;n#template#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#div#0;n#main#2;n#main#0;n#template#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#v-layout#0;n#div#0;n#div#0;n#main#2;n#main#0;n#template#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#div#0;n#main#3;n#main#0;n#template#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#div#1;n#main#0;n#template#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#h2#0;n#v-flex#0;n#v-layout#0;n#div#0;n#div#1;n#main#0;n#template#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#h2#1;n#v-flex#0;n#v-layout#0;n#div#0;n#div#1;n#main#0;n#template#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#v-layout#1;n#div#0;n#div#1;n#main#0;n#template#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#h2#0;n#v-layout#0;n#v-layout#1;n#div#0;n#div#1;n#main#0;n#template#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#h2#1;n#v-layout#0;n#v-layout#1;n#div#0;n#div#1;n#main#0;n#template#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#div#0;n#v-flex#0;n#v-layout#1;n#div#0;n#div#1;n#main#0;n#template#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#div#2;n#main#0;n#template#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#v-layout#0;n#v-container#0;n#div#2;n#main#0;n#template#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#v-btn#0;n#v-layout#0;n#v-container#0;n#div#2;n#main#0;n#template#0;n#!!top" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/map-app/notes/notes.txt">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="48">
+                      <caret line="2" column="83" selection-start-line="2" selection-start-column="83" selection-end-line="2" selection-end-column="83" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/map-app/src/App.vue">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="4992">
+                      <caret line="208" column="21" selection-start-line="208" selection-start-column="21" selection-end-line="208" selection-end-column="21" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/map-app/src/components/previewcreator/PreviewCreatorPage.vue">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="125">
+                      <caret line="1977" column="27" lean-forward="true" selection-start-line="1977" selection-start-column="27" selection-end-line="1977" selection-end-column="27" />
+                      <folding>
+                        <element signature="n#style#0;n#div#0;n#div#2;n#template#1;n#div#0;n#template#1;n#EditorBase#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#label#0;n#div#0;n#div#2;n#template#1;n#div#0;n#template#1;n#EditorBase#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/map-app/src/components/common/EditorBase.vue">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="231">
+                      <caret line="195" lean-forward="true" selection-start-line="195" selection-end-line="195" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/map-app/src/components/common/MapWidget.vue">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="-1344">
+                      <caret line="148" column="28" lean-forward="true" selection-start-line="148" selection-start-column="28" selection-end-line="148" selection-end-column="28" />
+                      <folding>
+                        <element signature="e#528#583#0" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-first>
+          <split-second>
+            <leaf>
+              <file pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/map-app/src/components/common/EditorBase.vue">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="508">
+                      <caret line="428" lean-forward="true" selection-start-line="428" selection-end-line="428" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/common/styleRenderer.js">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="371">
+                      <caret line="390" column="9" lean-forward="true" selection-start-line="390" selection-start-column="9" selection-end-line="390" selection-end-column="9" />
+                      <folding>
+                        <element signature="n#!!doc" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-second>
+        </splitter>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/map-app/src/router.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="272">
+                  <caret line="233" column="13" lean-forward="true" selection-start-line="233" selection-start-column="13" selection-end-line="233" selection-end-column="13" />
+                  <folding>
+                    <element signature="e#0#21#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/map-app/helper/basemapCreate/mapTilerAPI.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1704">
+                  <caret line="71" column="49" selection-start-line="71" selection-start-column="49" selection-end-line="71" selection-end-column="49" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/map-app/helper/basemapCreate/previewMapCreate.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="15624">
+                  <caret line="651" selection-start-line="651" selection-end-line="651" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/map-app/helper/basemapCreate/imageUtils.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="360">
+                  <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/map-app/helper/basemapCreate/imageSegmentUtils.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="51072">
+                  <caret line="2129" column="52" selection-start-line="2129" selection-start-column="52" selection-end-line="2129" selection-end-column="52" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/map-app/src/components/test/mapGenerateClientSideTestPage.vue">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="336">
+                  <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>&quot;</find>
+      <find>scale</find>
+      <find>data</find>
+      <find>leafS</find>
+      <find>pencilStyle</find>
+      <find>pencil</find>
+      <find>leafStyle</find>
+      <find>leafSt</find>
+      <find>HolyGrail-content</find>
+      <find>getBoundingClientRect</find>
+      <find>HolyGrail-body</find>
+      <find>HolyGrailbody</find>
+      <find>ref=</find>
+      <find>holyGrailbody</find>
+      <find>baseRoot</find>
+      <find>300</find>
+      <find>contentBase</find>
+      <find>createGradientStyle3</find>
+      <find>this.</find>
+      <find>class</find>
+      <find>mapContainerContainerRect</find>
+      <find>border</find>
+      <find>onResizeContentToFit</find>
+      <find>css</find>
+      <find>design-holder</find>
+      <find>onre</find>
+      <find>mapScaleValue</find>
+      <find>previewContainer</find>
+      <find>leaf</find>
+      <find>mapWidgetLoaded</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Print</replace>
+      <replace>print</replace>
+      <replace>printSize</replace>
+      <replace>printSizeID</replace>
+      <replace>billing</replace>
+      <replace>let</replace>
+      <replace>nextProgress</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/demo-app/src</dir>
+      <dir>$PROJECT_DIR$/demo-app/src/components/about</dir>
+      <dir>$PROJECT_DIR$/demo-app/src/components</dir>
+      <dir>$PROJECT_DIR$/demo-app</dir>
+      <dir>C:\Users\David\Documents\Dev\map-site-new\demo-app\src\components</dir>
+      <dir>C:\Users\David\Documents\Dev\map-site-new\server\auth</dir>
+      <dir>C:\Users\David\Documents\Dev\map-site-new\server</dir>
+      <dir>C:\Users\David\Documents\Dev\map-site-new\demo-app</dir>
+      <dir>C:\Users\David\Documents\Dev\map-site-new\demo-app\src</dir>
+      <dir>C:\Users\David\Documents\Dev\map-site-frontend\map-app\src\components\checkout</dir>
+      <dir>C:\Users\David\Documents\Dev\map-site-frontend\map-app\src\components</dir>
+      <dir>C:\Users\David\Documents\Dev\map-site-frontend\map-app\src\components\editor</dir>
+      <dir>C:\Users\David\Documents\Dev\map-site-frontend</dir>
+      <dir>C:\Users\David\Documents\Dev\map-site-frontend\map-app\public\static\assets\examples</dir>
+      <dir>C:\Users\David\Documents\Dev\map-site-frontend\map-app\public</dir>
+      <dir>C:\Users\David\Documents\Dev\map-site-frontend\map-app\src</dir>
+      <dir>C:\Users\David\Documents\Dev\map-site-frontend\map-app</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/map-app/src/components/contact/ContactPage.vue" />
+        <option value="$PROJECT_DIR$/map-app/src/main.js" />
+        <option value="$PROJECT_DIR$/map-app/src/components/checkout/AddressForm.vue" />
+        <option value="$PROJECT_DIR$/map-app/src/components/navbar/CartButton.vue" />
+        <option value="$PROJECT_DIR$/map-app/src/components/navbar/NavBarRightSection.vue" />
+        <option value="$PROJECT_DIR$/map-app/src/components/faq/FAQPage.vue" />
+        <option value="$PROJECT_DIR$/map-app/src/components/home/IconWithTextBlock.vue" />
+        <option value="$PROJECT_DIR$/map-app/src/components/common/SiteFooter.vue" />
+        <option value="$PROJECT_DIR$/map-app/src/components/findmyorder/OrderDetailsPage.vue" />
+        <option value="$PROJECT_DIR$/map-app/src/components/findmyorder/FindMyOrderPage.vue" />
+        <option value="$PROJECT_DIR$/map-app/src/components/common/OrderDetails.vue" />
+        <option value="$PROJECT_DIR$/map-app/src/components/confirmation/ConfirmationPage.vue" />
+        <option value="$PROJECT_DIR$/map-app/src/components/checkout/CheckoutPage.vue" />
+        <option value="$PROJECT_DIR$/map-app/src/components/checkout/CheckoutOrder.vue" />
+        <option value="$PROJECT_DIR$/map-app/src/components/navbar/CurrencyButton.vue" />
+        <option value="$PROJECT_DIR$/map-app/src/components/common/ErrorModal.vue" />
+        <option value="$PROJECT_DIR$/map-app/src/components/editor/ColourEditor.vue" />
+        <option value="$PROJECT_DIR$/map-app/src/components/editor/ThemeEditor.vue" />
+        <option value="$PROJECT_DIR$/map-app/src/components/editor/ColourExtractTool.vue" />
+        <option value="$PROJECT_DIR$/map-app/public/static/lib/marctooltips/MarcTooltips.js" />
+        <option value="$PROJECT_DIR$/map-app/src/components/editor/ThemeIconDynamic.vue" />
+        <option value="$PROJECT_DIR$/map-app/src/components/editor/DraggableContainer.vue" />
+        <option value="$PROJECT_DIR$/map-app/src/components/editor/PreviewExportTool.vue" />
+        <option value="$PROJECT_DIR$/map-app/src/components/home/MockupSection.vue" />
+        <option value="$PROJECT_DIR$/map-app/src/components/test/mapGenerateClientSideTestPage.vue" />
+        <option value="$PROJECT_DIR$/map-app/helper/basemapCreate/mapTilerAPI.js" />
+        <option value="$PROJECT_DIR$/map-app/helper/basemapCreate/previewMapCreate.js" />
+        <option value="$PROJECT_DIR$/map-app/helper/basemapCreate/imageUtils.js" />
+        <option value="$PROJECT_DIR$/map-app/helper/basemapCreate/imageSegmentUtils.js" />
+        <option value="$PROJECT_DIR$/common/commonGlobals.js" />
+        <option value="$PROJECT_DIR$/map-app/public/static/assets/mapjson/preview-geoapify.json" />
+        <option value="$PROJECT_DIR$/map-app/public/static/assets/mapjson/preview-myserver.json" />
+        <option value="$PROJECT_DIR$/map-app/src/components/common/ProcessingCheckmarkAnimated.vue" />
+        <option value="$PROJECT_DIR$/map-app/src/components/common/ProcessingSpinner.vue" />
+        <option value="$PROJECT_DIR$/map-app/src/components/common/ProcessingModal.vue" />
+        <option value="$PROJECT_DIR$/map-app/src/components/themes/ThemesPage.vue" />
+        <option value="$PROJECT_DIR$/map-app/src/router.js" />
+        <option value="$PROJECT_DIR$/map-app/src/components/home/HomeSearchInput.vue" />
+        <option value="$PROJECT_DIR$/map-app/src/App.vue" />
+        <option value="$PROJECT_DIR$/map-app/src/components/navbar/NavBar.vue" />
+        <option value="$PROJECT_DIR$/map-app/src/components/cart/CartSideBar.vue" />
+        <option value="$PROJECT_DIR$/map-app/src/components/examples/ExamplesPage.vue" />
+        <option value="$PROJECT_DIR$/map-app/src/components/about/AboutPage.vue" />
+        <option value="$PROJECT_DIR$/map-app/src/components/home/HomePage.vue" />
+        <option value="$PROJECT_DIR$/map-app/src/components/home/DemoMapWidget.vue" />
+        <option value="$PROJECT_DIR$/map-app/src/model/store.js" />
+        <option value="$PROJECT_DIR$/map-app/src/components/editor/ItemAddedModal.vue" />
+        <option value="$PROJECT_DIR$/map-app/src/components/previewcreator/PreviewCreatorPage.vue" />
+        <option value="$PROJECT_DIR$/map-app/src/components/common/MapWidget.vue" />
+        <option value="$PROJECT_DIR$/map-app/src/components/common/EditorBase.vue" />
+        <option value="$PROJECT_DIR$/map-app/src/components/editor/MapEditorPage.vue" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1144" />
+    <option name="y" value="43" />
+    <option name="width" value="1882" />
+    <option name="height" value="1357" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="map-site-frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="map-site-frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="map-site-frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="map-site-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="map-site-frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="map-site-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="map-app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="map-site-frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="map-site-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="map-app" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="map-site-frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="map-site-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="map-app" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="map-site-frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="map-site-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="map-app" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="map-site-frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="map-site-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="map-app" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="mapwidget" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="map-site-frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+            <path>
+              <item name="map-site-frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/map-app/src/components/common" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.1.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\David\Documents\Dev\map-site-frontend\map-app\public\test" />
+      <recent name="C:\Users\David\Documents\Dev\map-site-frontend\map-app\public\static\assets\cards\svg" />
+      <recent name="C:\Users\David\Documents\Dev\map-site-frontend\map-app\public\static\assets\cards" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\David\Documents\Dev\map-site-frontend\map-app\src\components\common" />
+      <recent name="C:\Users\David\Documents\Dev\map-site-frontend\map-app\public\static\assets\mapjson" />
+      <recent name="C:\Users\David\Documents\Dev\map-site-frontend\map-app\public\static\assets\home" />
+      <recent name="C:\Users\David\Documents\Dev\map-site-frontend\map-app\src\components\editor" />
+      <recent name="C:\Users\David\Documents\Dev\map-site-frontend\map-app\public\static\assets\colourschemes" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="globals.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="globals.js" working-dir="$PROJECT_DIR$/demo-app/src/model">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="203c86cd-ebe4-473d-ac17-9d84cff12a3c" name="Default Changelist" comment="" />
+      <created>1530460054489</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1530460054489</updated>
+      <workItem from="1530460057959" duration="16458000" />
+      <workItem from="1530735181552" duration="10097000" />
+      <workItem from="1530910461797" duration="6105000" />
+      <workItem from="1530977763335" duration="3048000" />
+      <workItem from="1531168392575" duration="1046000" />
+      <workItem from="1531173030660" duration="609000" />
+      <workItem from="1531254694367" duration="1802000" />
+      <workItem from="1531294703052" duration="184000" />
+      <workItem from="1531331029888" duration="8712000" />
+      <workItem from="1531352839313" duration="13201000" />
+      <workItem from="1531582788148" duration="4546000" />
+      <workItem from="1531601067145" duration="10446000" />
+      <workItem from="1531653060956" duration="4035000" />
+      <workItem from="1531657429612" duration="25546000" />
+      <workItem from="1531728178757" duration="9303000" />
+      <workItem from="1532332182734" duration="3526000" />
+      <workItem from="1532466148760" duration="9693000" />
+      <workItem from="1532787764555" duration="15224000" />
+      <workItem from="1532810983829" duration="5917000" />
+      <workItem from="1532817516863" duration="3930000" />
+      <workItem from="1532872148210" duration="21341000" />
+      <workItem from="1532984643228" duration="4478000" />
+      <workItem from="1533245818204" duration="608000" />
+      <workItem from="1533286025574" duration="3000" />
+      <workItem from="1533290898326" duration="1212000" />
+      <workItem from="1533329828623" duration="5408000" />
+      <workItem from="1533423094518" duration="101000" />
+      <workItem from="1533595114115" duration="550000" />
+      <workItem from="1533678548101" duration="3096000" />
+      <workItem from="1533716616229" duration="2280000" />
+      <workItem from="1534234858139" duration="8008000" />
+      <workItem from="1534322163427" duration="8795000" />
+      <workItem from="1534364872947" duration="9315000" />
+      <workItem from="1534452860329" duration="6135000" />
+      <workItem from="1534495643597" duration="145000" />
+      <workItem from="1534584700151" duration="286000" />
+      <workItem from="1534585217419" duration="1292000" />
+      <workItem from="1534603241771" duration="42000" />
+      <workItem from="1534605526397" duration="26510000" />
+      <workItem from="1534676174053" duration="34235000" />
+      <workItem from="1534921635159" duration="7503000" />
+      <workItem from="1534971596537" duration="1154000" />
+      <workItem from="1535231193472" duration="37000" />
+      <workItem from="1535231243847" duration="5221000" />
+      <workItem from="1535280814300" duration="16972000" />
+      <workItem from="1535301874599" duration="15578000" />
+      <workItem from="1535380979106" duration="30118000" />
+      <workItem from="1535489649843" duration="1928000" />
+      <workItem from="1535572849805" duration="13515000" />
+      <workItem from="1535617052094" duration="1194000" />
+      <workItem from="1535660187392" duration="5455000" />
+      <workItem from="1535907220569" duration="12122000" />
+      <workItem from="1535921542359" duration="758000" />
+      <workItem from="1535922336459" duration="3247000" />
+      <workItem from="1536005936437" duration="8788000" />
+      <workItem from="1536180049527" duration="1093000" />
+      <workItem from="1536257693429" duration="9876000" />
+      <workItem from="1536351158137" duration="16946000" />
+      <workItem from="1536534729580" duration="9383000" />
+      <workItem from="1536701613172" duration="7751000" />
+      <workItem from="1536753457757" duration="7051000" />
+      <workItem from="1536870971061" duration="6379000" />
+      <workItem from="1537030964599" duration="15902000" />
+      <workItem from="1537097506379" duration="29328000" />
+      <workItem from="1537186606316" duration="500000" />
+      <workItem from="1537213503912" duration="8236000" />
+      <workItem from="1537305917057" duration="5709000" />
+      <workItem from="1537388086452" duration="6573000" />
+      <workItem from="1537476686009" duration="7127000" />
+      <workItem from="1537567680241" duration="4015000" />
+      <workItem from="1537622799486" duration="9261000" />
+      <workItem from="1537651218089" duration="3550000" />
+      <workItem from="1537699019032" duration="19153000" />
+      <workItem from="1544622607030" duration="971000" />
+      <workItem from="1544653171882" duration="18222000" />
+      <workItem from="1544961965466" duration="1530000" />
+      <workItem from="1545541363753" duration="6886000" />
+      <workItem from="1546824476599" duration="9667000" />
+      <workItem from="1546939003371" duration="3248000" />
+      <workItem from="1547015342008" duration="5355000" />
+      <workItem from="1547231318121" duration="6513000" />
+      <workItem from="1547282716195" duration="16103000" />
+      <workItem from="1547302901820" duration="19829000" />
+      <workItem from="1547369943505" duration="23760000" />
+      <workItem from="1547501285767" duration="4580000" />
+      <workItem from="1547673737048" duration="1812000" />
+      <workItem from="1547680513891" duration="765000" />
+      <workItem from="1547895741221" duration="14524000" />
+      <workItem from="1548456093274" duration="2020000" />
+      <workItem from="1548460285638" duration="599000" />
+      <workItem from="1548511751223" duration="29687000" />
+      <workItem from="1548583939686" duration="44298000" />
+      <workItem from="1548715314785" duration="1425000" />
+      <workItem from="1548796899010" duration="2691000" />
+      <workItem from="1548970889200" duration="3913000" />
+      <workItem from="1549055432863" duration="6865000" />
+      <workItem from="1549225838965" duration="2666000" />
+      <workItem from="1549321914687" duration="599000" />
+      <workItem from="1549403092155" duration="4634000" />
+      <workItem from="1549575318885" duration="1198000" />
+      <workItem from="1549624035998" duration="12257000" />
+      <workItem from="1549662070211" duration="377000" />
+      <workItem from="1549713204349" duration="21817000" />
+      <workItem from="1549821861269" duration="2339000" />
+      <workItem from="1549920235638" duration="3000" />
+      <workItem from="1550004136871" duration="10191000" />
+      <workItem from="1550098734825" duration="1671000" />
+      <workItem from="1550179059171" duration="3450000" />
+      <workItem from="1550267191093" duration="599000" />
+      <workItem from="1550336353317" duration="12000000" />
+      <workItem from="1550500544173" duration="19459000" />
+      <workItem from="1550617381207" duration="1677000" />
+      <workItem from="1550699131928" duration="1851000" />
+      <workItem from="1550776024159" duration="2119000" />
+      <workItem from="1550867720646" duration="1198000" />
+      <workItem from="1550953630272" duration="247000" />
+      <workItem from="1551019065901" duration="5922000" />
+      <workItem from="1551092606096" duration="24462000" />
+      <workItem from="1564952493774" duration="4792000" />
+      <workItem from="1565440374830" duration="1236000" />
+      <workItem from="1565510076823" duration="9109000" />
+      <workItem from="1565641915834" duration="599000" />
+      <workItem from="1566248389444" duration="674000" />
+      <workItem from="1566422396766" duration="1456000" />
+      <workItem from="1566458141120" duration="599000" />
+      <workItem from="1566511184808" duration="2616000" />
+      <workItem from="1566593767470" duration="599000" />
+      <workItem from="1566728851189" duration="11383000" />
+      <workItem from="1566814713450" duration="3201000" />
+      <workItem from="1566830153951" duration="6854000" />
+      <workItem from="1566937814127" duration="5942000" />
+      <workItem from="1567025823954" duration="1862000" />
+      <workItem from="1567114151601" duration="1198000" />
+      <workItem from="1567268530186" duration="1807000" />
+      <workItem from="1567972483185" duration="3757000" />
+      <workItem from="1568233379173" duration="599000" />
+      <workItem from="1568454813408" duration="1686000" />
+      <workItem from="1568474770723" duration="1887000" />
+      <workItem from="1568545361715" duration="26651000" />
+      <workItem from="1569688502648" duration="1954000" />
+      <workItem from="1569775238090" duration="3359000" />
+      <workItem from="1572100833800" duration="599000" />
+      <workItem from="1572169330694" duration="928000" />
+      <workItem from="1572170510446" duration="16664000" />
+      <workItem from="1572299368368" duration="8605000" />
+      <workItem from="1572387017377" duration="3192000" />
+      <workItem from="1572471938635" duration="6317000" />
+      <workItem from="1572645539210" duration="7943000" />
+      <workItem from="1572691257150" duration="32263000" />
+      <workItem from="1572802779619" duration="4281000" />
+      <workItem from="1572822012590" duration="7578000" />
+      <workItem from="1572907216574" duration="3763000" />
+      <workItem from="1573077264579" duration="2619000" />
+      <workItem from="1573154287430" duration="9000" />
+      <workItem from="1573155186563" duration="60000" />
+      <workItem from="1573318714257" duration="2309000" />
+      <workItem from="1573388427976" duration="10934000" />
+      <workItem from="1573681026018" duration="2102000" />
+      <workItem from="1573746663740" duration="1077000" />
+      <workItem from="1573768668639" duration="614000" />
+      <workItem from="1574008360841" duration="8231000" />
+      <workItem from="1574114366201" duration="608000" />
+      <workItem from="1574626037137" duration="1220000" />
+      <workItem from="1574952433752" duration="599000" />
+      <workItem from="1578648884453" duration="1203000" />
+      <workItem from="1579441220537" duration="728000" />
+      <workItem from="1580051444306" duration="59000" />
+      <workItem from="1580051566792" duration="65000" />
+      <workItem from="1580051648757" duration="88000" />
+      <workItem from="1580052050945" duration="497000" />
+      <workItem from="1580577717426" duration="610000" />
+      <workItem from="1581271432422" duration="4292000" />
+      <workItem from="1581597375085" duration="1198000" />
+      <workItem from="1581776404338" duration="816000" />
+      <workItem from="1581780653682" duration="1574000" />
+      <workItem from="1581849053213" duration="19679000" />
+      <workItem from="1581892591966" duration="3786000" />
+      <workItem from="1581978323917" duration="2399000" />
+      <workItem from="1582016305217" duration="1993000" />
+      <workItem from="1582052161292" duration="5181000" />
+      <workItem from="1582245793074" duration="1122000" />
+      <workItem from="1582368858776" duration="599000" />
+      <workItem from="1582390427010" duration="8329000" />
+      <workItem from="1582464914100" duration="4306000" />
+      <workItem from="1582846621637" duration="2684000" />
+      <workItem from="1582973391161" duration="22368000" />
+      <workItem from="1583008520055" duration="12980000" />
+      <workItem from="1583058543493" duration="23237000" />
+      <workItem from="1583187466187" duration="609000" />
+      <workItem from="1583273414694" duration="1539000" />
+      <workItem from="1583355944553" duration="607000" />
+      <workItem from="1583401126640" duration="604000" />
+      <workItem from="1583441440224" duration="602000" />
+      <workItem from="1583443357813" duration="191000" />
+      <workItem from="1583613842621" duration="11103000" />
+      <workItem from="1583667441215" duration="1801000" />
+      <workItem from="1583695287002" duration="3109000" />
+      <workItem from="1583791379177" duration="3022000" />
+      <workItem from="1583879509922" duration="1071000" />
+      <workItem from="1583955298001" duration="1515000" />
+      <workItem from="1584205089592" duration="1207000" />
+      <workItem from="1584271365453" duration="18680000" />
+      <workItem from="1584366465738" duration="5321000" />
+      <workItem from="1584474735414" duration="1810000" />
+      <workItem from="1584537772567" duration="1770000" />
+      <workItem from="1584922452679" duration="657000" />
+      <workItem from="1584969046342" duration="8016000" />
+      <workItem from="1585081023771" duration="1572000" />
+      <workItem from="1585171586624" duration="650000" />
+      <workItem from="1585224508221" duration="602000" />
+      <workItem from="1585317506001" duration="6174000" />
+      <workItem from="1585490182428" duration="13452000" />
+      <workItem from="1585682550155" duration="599000" />
+      <workItem from="1585855826848" duration="1126000" />
+      <workItem from="1586039344941" duration="599000" />
+      <workItem from="1586079419766" duration="1572000" />
+      <workItem from="1586092749040" duration="11705000" />
+      <workItem from="1586208862644" duration="8389000" />
+      <workItem from="1586216753471" duration="1891000" />
+      <workItem from="1586262588021" duration="1966000" />
+      <workItem from="1586285784410" duration="10304000" />
+      <workItem from="1586617474300" duration="7007000" />
+      <workItem from="1586685737758" duration="9162000" />
+      <workItem from="1586703483641" duration="14148000" />
+      <workItem from="1586788389464" duration="5806000" />
+      <workItem from="1586897410213" duration="3368000" />
+      <workItem from="1587145321375" duration="1887000" />
+      <workItem from="1587218649445" duration="8379000" />
+      <workItem from="1587301760904" duration="8481000" />
+      <workItem from="1587314858650" duration="17028000" />
+      <workItem from="1587419370907" duration="4421000" />
+      <workItem from="1587500220364" duration="2283000" />
+      <workItem from="1587512492683" duration="341000" />
+      <workItem from="1587586789735" duration="2215000" />
+      <workItem from="1587652003987" duration="625000" />
+      <workItem from="1587676629285" duration="687000" />
+      <workItem from="1587726250358" duration="4829000" />
+      <workItem from="1587815982294" duration="17224000" />
+      <workItem from="1587894268665" duration="14736000" />
+      <workItem from="1587998512681" duration="3585000" />
+      <workItem from="1588073696336" duration="1983000" />
+      <workItem from="1588102995568" duration="2180000" />
+      <workItem from="1588183463918" duration="599000" />
+      <workItem from="1588234672324" duration="1326000" />
+      <workItem from="1588267309031" duration="1242000" />
+      <workItem from="1588284849154" duration="811000" />
+      <workItem from="1588322891680" duration="16000" />
+      <workItem from="1588365706933" duration="814000" />
+      <workItem from="1588423344006" duration="5024000" />
+      <workItem from="1588464153381" duration="390000" />
+      <workItem from="1588504778662" duration="20077000" />
+      <workItem from="1588772091095" duration="1369000" />
+      <workItem from="1589060821482" duration="1207000" />
+      <workItem from="1589100791346" duration="5903000" />
+      <workItem from="1589225735415" duration="599000" />
+      <workItem from="1589291320222" duration="599000" />
+      <workItem from="1589624863766" duration="14043000" />
+      <workItem from="1589710242764" duration="2542000" />
+      <workItem from="1589831505524" duration="1200000" />
+      <workItem from="1589927289555" duration="599000" />
+      <workItem from="1589967497443" duration="8636000" />
+      <workItem from="1589991465443" duration="12015000" />
+      <workItem from="1590008484160" duration="10668000" />
+      <workItem from="1590074425799" duration="3421000" />
+      <workItem from="1590147808038" duration="27631000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="794327000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1144" y="43" width="1882" height="1357" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" order="0" visible="true" weight="0.13069414" />
+      <window_info id="Structure" order="1" weight="0.2488" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.37872684" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32921812" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32921812" />
+      <window_info anchor="bottom" id="NativeScript" order="8" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.13021703" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Project" order="0" visible="true" weight="0.23475446" />
+      <window_info id="Structure" order="1" weight="0.2488" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3468599" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32921812" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32921812" />
+      <window_info anchor="bottom" id="NativeScript" order="8" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.20870265" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/map-app/src/components/checkout/AddressForm.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3120">
+          <caret line="130" column="51" selection-start-line="130" selection-start-column="51" selection-end-line="130" selection-end-column="51" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#v-layout#0;n#v-form#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#v-text-field#3;n#v-form#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#v-layout#1;n#v-form#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#v-layout#1;n#v-form#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/src/components/HelloWorld.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="56" column="29" lean-forward="true" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/src/components/test/TestMobilePage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-288">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/src/components/test/MockupWidgetTestPage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-432">
+          <caret line="36" column="63" lean-forward="true" selection-start-line="36" selection-start-column="63" selection-end-line="36" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/helper/canvasUtils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/dist/static/maptest/webgl-lessons-helper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="432" column="4" selection-start-line="432" selection-start-column="4" selection-end-line="432" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/public/static/maptest/webgl-lessons-helper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="432" column="4" selection-start-line="432" selection-start-column="4" selection-end-line="432" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="16393" column="4" selection-start-line="16393" selection-start-column="4" selection-end-line="16393" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/commonGlobals.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6432">
+          <caret line="268" column="40" selection-start-line="268" selection-start-column="40" selection-end-line="268" selection-end-column="40" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/src/components/editor/BlendTool.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/public/static/assets/mapjson/preview-myserver.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22298" selection-start-column="22298" selection-end-column="22298" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/public/static/assets/mapjson/preview-openmaptiler.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="514" selection-start-column="514" selection-end-column="583" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/public/static/assets/mapjson/preview-geoapify.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="527" selection-start-column="527" selection-end-column="527" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/src/components/editor/PreviewExportTool.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="72" column="30" lean-forward="true" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#v-layout#0;n#DraggableContainer#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#v-textarea#0;n#v-layout#0;n#DraggableContainer#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/src/components/home/MockupSection.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="52" column="6" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#v-flex#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#v-layout#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#1;n#v-layout#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#v-flex#0;n#v-layout#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#v-btn#0;n#v-flex#0;n#v-layout#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/notes/copywriting notes.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/notes/theme colournames.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/notes/troubleshooting.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/src/components/common/SpinnerLoader.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="11" lean-forward="true" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/src/components/common/ProcessingSpinner.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2016">
+          <caret line="84" column="36" selection-start-line="84" selection-start-column="36" selection-end-line="84" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/src/components/common/ProcessingModal.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6408">
+          <caret line="276" column="37" selection-start-line="276" selection-start-column="37" selection-end-line="276" selection-end-column="37" />
+          <folding>
+            <element signature="n#style#0;n#v-card-text#1;n#v-card#0;n#v-dialog#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#template#1;n#v-card-text#1;n#v-card#0;n#v-dialog#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#template#1;n#v-card-text#1;n#v-card#0;n#v-dialog#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#ProcessingSpinner#0;n#div#0;n#v-card-text#1;n#v-card#0;n#v-dialog#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#v-card#0;n#v-dialog#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#v-card#0;n#v-dialog#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#v-layout#0;n#div#0;n#v-card#0;n#v-dialog#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ThemeSelectorGrid#0;n#v-flex#0;n#v-layout#0;n#div#0;n#v-card#0;n#v-dialog#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#MapWidget#0;n#v-flex#0;n#v-layout#0;n#div#0;n#v-card#0;n#v-dialog#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#v-card-text#2;n#v-card#0;n#v-dialog#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/src/components/common/ProcessingCheckmarkAnimated.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="984">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/notes/places.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/src/components/common/LoadingPage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="48" column="40" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/src/components/home/HomeSearchInput.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2064">
+          <caret line="86" column="17" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/src/components/previewcreator/SearchInput.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4992">
+          <caret line="208" column="21" selection-start-line="208" selection-start-column="21" selection-end-line="208" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/src/components/themes/ThemesPage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+          <folding>
+            <element signature="n#style#0;n#main#0;n#main#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#main#0;n#main#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#1;n#v-flex#0;n#v-layout#0;n#div#0;n#div#0;n#main#0;n#main#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/helper/basemapCreate/mapTilerAPI.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1704">
+          <caret line="71" column="49" selection-start-line="71" selection-start-column="49" selection-end-line="71" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/helper/basemapCreate/previewMapCreate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15624">
+          <caret line="651" selection-start-line="651" selection-end-line="651" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/helper/basemapCreate/imageUtils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/helper/basemapCreate/imageSegmentUtils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51072">
+          <caret line="2129" column="52" selection-start-line="2129" selection-start-column="52" selection-end-line="2129" selection-end-column="52" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/src/components/test/mapGenerateClientSideTestPage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/src/components/cart/CartSideBar.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="498" column="34" lean-forward="true" selection-start-line="498" selection-start-column="34" selection-end-line="498" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/src/components/examples/ExamplesPage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#main#0;n#main#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#main#0;n#main#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#1;n#v-flex#0;n#v-layout#0;n#div#0;n#div#0;n#main#0;n#main#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/src/components/faq/FAQPage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <folding>
+            <element signature="n#style#0;n#h2#0;n#v-flex#0;n#v-layout#1;n#v-container#0;n#content#0;n#section#0;n#main#0;n#main#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/src/components/about/AboutPage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/notes/notes.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="83" selection-start-line="2" selection-start-column="83" selection-end-line="2" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/src/components/home/DemoMapWidget.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/src/components/editor/ItemAddedModal.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="29" column="59" lean-forward="true" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/src/components/navbar/NavBar.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="68" column="22" lean-forward="true" selection-start-line="68" selection-start-column="22" selection-end-line="69" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/src/components/home/HomePage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="195" column="49" selection-start-line="195" selection-end-line="196" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#main#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#0;n#div#0;n#main#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#v-layout#0;n#section#0;n#div#0;n#main#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#v-layout#0;n#section#0;n#div#0;n#main#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ScrollingIcon#0;n#div#0;n#v-layout#0;n#section#0;n#div#0;n#main#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#div#0;n#main#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#v-layout#0;n#div#1;n#div#0;n#section#0;n#div#0;n#main#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#main#0;n#main#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#1;n#v-flex#0;n#v-layout#0;n#div#0;n#div#0;n#main#0;n#main#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#main#2;n#main#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#v-layout#0;n#div#0;n#div#0;n#main#2;n#main#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#main#3;n#main#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#main#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#v-flex#0;n#v-layout#0;n#div#0;n#div#1;n#main#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#1;n#v-flex#0;n#v-layout#0;n#div#0;n#div#1;n#main#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#v-layout#1;n#div#0;n#div#1;n#main#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#v-layout#0;n#v-layout#1;n#div#0;n#div#1;n#main#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#1;n#v-layout#0;n#v-layout#1;n#div#0;n#div#1;n#main#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#v-flex#0;n#v-layout#1;n#div#0;n#div#1;n#main#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#main#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#v-layout#0;n#v-container#0;n#div#2;n#main#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#v-btn#0;n#v-layout#0;n#v-container#0;n#div#2;n#main#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/src/components/previewcreator/PreviewCreatorPage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="1977" column="27" lean-forward="true" selection-start-line="1977" selection-start-column="27" selection-end-line="1977" selection-end-column="27" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#2;n#template#1;n#div#0;n#template#1;n#EditorBase#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#0;n#div#2;n#template#1;n#div#0;n#template#1;n#EditorBase#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/styleRenderer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="390" column="9" lean-forward="true" selection-start-line="390" selection-start-column="9" selection-end-line="390" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/src/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="233" column="13" lean-forward="true" selection-start-line="233" selection-start-column="13" selection-end-line="233" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/src/components/common/MapWidget.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1344">
+          <caret line="148" column="28" lean-forward="true" selection-start-line="148" selection-start-column="28" selection-end-line="148" selection-end-column="28" />
+          <folding>
+            <element signature="e#528#583#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/src/model/store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="181" column="18" selection-start-line="181" selection-start-column="18" selection-end-line="181" selection-end-column="18" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#22#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/node_modules/vue/types/vue.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/src/components/common/EditorBase.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="195" lean-forward="true" selection-start-line="195" selection-end-line="195" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map-app/src/components/editor/MapEditorPage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1484">
+          <caret line="37" column="38" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#template#0;n#EditorBase#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#v-layout#0;n#template#1;n#template#0;n#EditorBase#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#template#0;n#AccordianPanel#0;n#div#0;n#template#1;n#EditorBase#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#v-text-field#2;n#div#1;n#template#0;n#AccordianPanel#2;n#div#0;n#template#1;n#EditorBase#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#v-layout#0;n#div#1;n#v-btn#0;n#div#0;n#template#0;n#MobileTabBar#0;n#v-layout#0;n#template#4;n#EditorBase#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#v-layout#0;n#v-card-text#0;n#v-card#0;n#v-tab-item#1;n#v-tabs-items#0;n#v-layout#0;n#template#4;n#EditorBase#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#OptionRow#0;n#v-layout#0;n#v-card-text#0;n#v-card#0;n#v-tab-item#1;n#v-tabs-items#0;n#v-layout#0;n#template#4;n#EditorBase#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#v-layout#0;n#v-card-text#0;n#v-card#0;n#v-tab-item#2;n#v-tabs-items#0;n#v-layout#0;n#template#4;n#EditorBase#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#OptionRow#0;n#v-layout#0;n#v-card-text#0;n#v-card#0;n#v-tab-item#2;n#v-tabs-items#0;n#v-layout#0;n#template#4;n#EditorBase#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

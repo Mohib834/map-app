@@ -1,0 +1,35 @@
+- if build error on map-app
+This relative module was not found:
+* ../assets/logo.png in ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory                                                   ":"node_modules/.cache/vue-loader","cacheIdentifier":"ffe60462-vue-loader-templa                                                   te"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options                                                   !./node_modules/vuetify-loader/lib/loader.js!./node_modules/cache-loader/dist/cj                                                   s.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/                                                   @vue/cli-service/generator/router/template/src/views/Home.vue?vue&type=template&                                                   id=4635455c&
+
+cd /srv/map-site-frontend/map-app/node_modules/@vue/cli-service/generator/router/template/src/
+mkdir assets
+cd assets
+touch logo.png
+
+--------------
+
+- how to run
+  start mysql via xammp
+  run server after sql is running: cd server, node mapServer
+  run preview processor: cd server, node mapServerProcessingNode
+  run website:  cd demo-app, npm run serve
+
+- how to run processOrders
+node --max-old-space-size=8192 processFullMapsPart1.js
+
+- how to fill in example credit card detail
+4242 4242 4242 4242  24/24 444 44444
+
+- previewpage stays on loading page?
+  check that mysql is running, and then restart server. It does some operations on first load that require the db to be accesible
+
+- error when running mpn run serve, with module.exports commonglobals ?
+  recheckout files seems to fix this
+
+
+  - admin website - changing the baseurl
+  eg. to www.makemapart.com/pma-admin
+  then make sure that the publicPath is correct in  admin-app/vue.config.js
+e.g     publicPath: process.env.NODE_ENV === 'production' ? '/pma-admin/' : '/',
+

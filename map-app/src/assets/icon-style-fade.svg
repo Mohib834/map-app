@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 58 58' style='enable-background:new 0 0 58 58;' xml:space='preserve'>
+    <style type='text/css'> .st0{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:10;} .st1{fill:url(#SVGID_1_);}</style>
+    <polyline class='st0' points='3.4,13.2 3.4,51.3 54.6,51.3 54.6,13.2 '/><rect x='69' y='-7' width='29.4' height='19.4'/>
+    <linearGradient id='SVGID_1_' gradientUnits='userSpaceOnUse' x1='29' y1='18.3333' x2='29' y2='51.3333'><stop offset='0' style='stop-color:#000000;stop-opacity:0'/>
+        <stop offset='0.7092' style='stop-color:#000000'/>
+    </linearGradient>
+    <rect x='3.4' y='18.3' class='st1' width='51.2' height='33'/>
+</svg>
