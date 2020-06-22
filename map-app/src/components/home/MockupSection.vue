@@ -1,7 +1,7 @@
 <template>
       <div class="mockup-container"  :style="containerStyle">
           <v-flex xs12 md8 class="text-xs-center" style="z-index:  1; margin: 0">
-              <img data-aos="fade-up" :src="require('@/assets/img/example/' + image)"  class="section-image" style="" alt="">
+              <img data-aos="fade-up" :src="require('@/assets/img/examples/' + image)"  class="section-image" style="" alt="">
           </v-flex>
           <v-layout column  xs12 md4 class="text-xs-center " :style="{'z-index': 1 , 'color': themeNameColour}">
               <h2 class=" font-weight-normal heading locationHeading" style="margin-bottom: 0" :style="locationTextStyle"> {{locationName}} </h2>

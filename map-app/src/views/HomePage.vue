@@ -29,7 +29,7 @@
 
 
                 <div class="hero__container" >
-                    <div class="hero__img hero__img--large" style="background-image: url('/static/assets/home/headertest.png'); background-position:60% center">
+                    <div class="hero__img hero__img--large" style="background-position:60% center" :style="`background-image: url(${require('@/assets/img/home/headertest.webp')})`">
                         <div class="hero__body hero__body--center fill-height" id='hero-body'>
                             <v-layout column style="position:relative; color: black; margin-left: 10px; margin-right: 0px; padding-left: 254px;" align-left  justify-center fill-height>
 
@@ -375,29 +375,16 @@
   // import DemoMapWidget from './DemoMapWidget.vue'
   import {mapGetters} from 'vuex'
   import {mapActions} from 'vuex'
-  import  ImageGallery from '../components/home/ImageGallery.vue';
-  import HomeSearchInput from '../components/home/HomeSearchInput';
-  import LazyImage from '../components/home/LazyImage';
-  //import Home from "@vue/cli-service/generator/router/template/src/views/Home";
-  /*
-  import Slick from 'vue-slick';
-  import 'slick-carousel/slick/slick.css';
-  import '../../../node_modules/slick-carousel/slick/slick-theme.css';
-  */
-  import ScrollingIcon from '../components/home/ScrollingIcon';
-  import MockupSection from '../components/home/MockupSection';
-  import IconWithTextBlock from '../components/home/IconWithTextBlock';
-
 
   export default {
     components:{
       /*   Slick, */
-      LazyImage,
-      ImageGallery,
-      HomeSearchInput,
-      ScrollingIcon,
-      MockupSection,
-      IconWithTextBlock
+      LazyImage: () => import('@/components/home/LazyImage.vue'),
+    //   ImageGallery: () => import('@/components/home/ImageGallery.vue'),
+      HomeSearchInput: () => import('@/components/home/HomeSearchInput.vue'),
+      ScrollingIcon: () => import('@/components/home/ScrollingIcon.vue'),
+      MockupSection: () => import('@/components/home/MockupSection.vue'),
+      IconWithTextBlock: () => import('@/components/home/IconWithTextBlock.vue')
       //   DemoMapWidget
     },
     props: {

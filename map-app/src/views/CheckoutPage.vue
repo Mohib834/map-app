@@ -388,9 +388,6 @@
 </template>
 
 <script>
-  import CheckoutOrder from '../components/checkout/CheckoutOrder.vue'
-  import AddressForm from '../components/checkout/AddressForm.vue'
-  import PaymentOption from '../components/checkout/PaymentOption.vue'
   import {mapGetters} from 'vuex'
   import {mapActions} from 'vuex'
   import utilsMixin from "../mixins/utilsMixin";
@@ -412,9 +409,9 @@
 
   export default {
     components: {
-      CheckoutOrder,
-      AddressForm,
-      PaymentOption
+      CheckoutOrder: () => import('@/components/checkout/CheckoutOrder.vue'),
+      AddressForm: () => import('@/components/checkout/AddressForm.vue'),
+      PaymentOption: () => import('@/components/checkout/PaymentOption.vue')
     },
     mixins: [utilsMixin],
     data () {

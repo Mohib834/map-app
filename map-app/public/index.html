@@ -25,30 +25,20 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="icon" href="<%= BASE_URL %>icon-logo.png">
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script>
-      WebFont.load({
-        google: {
-          families: ['Roboto:100,300,400,500,700,900']
-        }
-      });
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
 <!--
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
 -->
-      <link type="text/css" rel="stylesheet" href="https://cdn.materialdesignicons.com/2.5.94/css/materialdesignicons.min.css">
-    <!--
+    <link type="text/css" rel="stylesheet" href="https://cdn.materialdesignicons.com/2.5.94/css/materialdesignicons.min.css">    <!--
     <link rel='stylesheet' href='static/lib/simpleLightbox/simplebar.css' />
 -->
 
-      <script type="text/javascript" src="/static/lib/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" defer src="/static/lib/jquery-3.2.1.min.js"></script>
 
     <!-- test the simple the tooltips for the theme names -->
     <!-- todo remove from here ? -->
-    <script type="text/javascript" src="/static/lib/marctooltips/MarcTooltips.js"></script>
+    <script type="text/javascript" defer src="/static/lib/marctooltips/MarcTooltips.js"></script>
     <link type="text/css" rel="stylesheet" href="/static/lib/marctooltips/MarcTooltips.css" media="all"/>
 
     <!-- lightbo-->
@@ -76,6 +66,10 @@
     <noscript>
       <strong>We're sorry but this site doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
+
+    
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
 
     <!-- https://developers.facebook.com/docs/javascript/quickstart-->
     <script>
@@ -281,11 +275,6 @@ void main() {
 
     <!-- lightbox-->
     <script type="text/javascript" src="/static/lib/modulobox/modulobox.min.js"></script>
-
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-
-
 
   </body>
 </html>

@@ -1,5 +1,6 @@
 
 const CompressionWebpackPlugin = require("compression-webpack-plugin");
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 ///////////////////////////////////////////////////////////////////
 // USE ONLY APPLUES FOR DEV SERVER TESTING when using npm run serve
@@ -22,6 +23,9 @@ else{
 
 // vue.config.js
 module.exports = {
+    chainWebpack: (config) => {
+        config.plugins.delete('prefetch');
+    },
     // options...
     devServer: {
       disableHostCheck: true,   // https://stackoverflow.com/questions/43619644/i-am-getting-an-invalid-host-header-message-when-running-my-react-app-in-a-we
@@ -51,6 +55,9 @@ module.exports = {
         resolve: {
             symlinks: false
         },
+        optimization: {
+            runtimeChunk: true,
+        },
         plugins: [
             new CompressionWebpackPlugin({
                 filename: "[path].gz[query]",
@@ -58,7 +65,8 @@ module.exports = {
                 test: /\.(js|css)$/,
                 threshold: 10240,
                 minRatio: 0.8
-            })
+            }),
+            new BundleAnalyzerPlugin()
         ]
     },
 

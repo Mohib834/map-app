@@ -102,16 +102,14 @@
 
             ]);
 */
+        },
+        mounted(){
             this.$store.dispatch("retrieveSessionData").then(() =>{
-
                 this.$store.dispatch("retrieveCartFromServer").then(()=>{
                     console.log("cart retrieved");
                     // retrieve from server
-
-
                 }).catch(()=>{
                     console.log("cart error");
-
                 });
             });
         },
