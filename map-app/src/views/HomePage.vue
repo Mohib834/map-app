@@ -211,12 +211,12 @@
                 <div  class="work-section-container-row " >
                     <v-layout  row class="justify-start align-left align-content-left"  >
                         <v-flex xs12 md7>
-                            <img data-aos="fade-up" src="/static/assets/home/close up.jpg"  class="full-width" alt="">
+                            <img data-aos="fade-up" :src="require('@/assets/img/home/close-up.webp')" class="full-width" alt="">
                         </v-flex>
                     </v-layout>
                     <v-layout  row class="justify-end align-right align-content-right" style="margin-top: 2rem"  >
                         <v-flex xs12 md8>
-                            <img data-aos="fade-up" src="/static/assets/home/close up 2.jpg"   class="full-width" alt="">
+                            <img data-aos="fade-up" :src="require('@/assets/img/home/close-up-2.webp')" class="full-width" alt="">
                         </v-flex>
                     </v-layout>
                 </div>
@@ -524,16 +524,16 @@
         this.adjustMobileImgHeight();
       },
       // to adjust the image height so that searchbar may show without scrolling on all mobile resolutions
-      adjustMobileImgHeight: function () {
-        let h = window.innerHeight;
-        if(h <= 568) {
-          $('#mbl-image').height('28vh');
-        } else if(h >= 736) {
-          $('#mbl-image').height('48vh');
-        } else {
-          $('#mbl-image').height('40vh');
-        }
-      }
+    //   adjustMobileImgHeight: function () {
+    //     let h = window.innerHeight;
+    //     if(h <= 568) {
+    //       $('#mbl-image').height('28vh');
+    //     } else if(h >= 736) {
+    //       $('#mbl-image').height('48vh');
+    //     } else {
+    //       $('#mbl-image').height('40vh');
+    //     }
+    //   }
     },
     watch:{
     },

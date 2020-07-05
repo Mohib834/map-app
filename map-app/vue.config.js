@@ -1,5 +1,5 @@
 
-const CompressionWebpackPlugin = require("compression-webpack-plugin");
+const CompressionPlugin = require('compression-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 ///////////////////////////////////////////////////////////////////
@@ -24,7 +24,8 @@ else{
 // vue.config.js
 module.exports = {
     chainWebpack: (config) => {
-        config.plugins.delete('prefetch');
+        config.plugins.delete('prefetch');        
+        config.plugin('CompressionPlugin').use(CompressionPlugin)
     },
     // options...
     devServer: {
@@ -59,10 +60,10 @@ module.exports = {
             runtimeChunk: true,
         },
         plugins: [
-            new CompressionWebpackPlugin({
-                filename: "[path].gz[query]",
-                algorithm: "gzip",
-                test: /\.(js|css)$/,
+            new CompressionPlugin({
+                filename: '[path].gz[query]',
+                algorithm: 'gzip',
+                test: /\.js$|\.css$|\.html$|\.eot?.+$|\.ttf?.+$|\.woff?.+$|\.svg?.+$/,
                 threshold: 10240,
                 minRatio: 0.8
             }),
