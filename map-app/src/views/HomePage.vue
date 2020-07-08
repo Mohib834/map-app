@@ -171,19 +171,29 @@
 
                     <v-layout  row wrap class="justify-center align-center" style="margin-top: 10px; margin-bottom: 10px"  >
                         <v-flex xs5 md2 class="text-xs-center" >
-                            <img src="/static/assets/cards/svg/visa-logo.svg" class="cardimage" />
+                            <clazy-load src="/static/assets/cards/svg/visa-logo.svg">
+                                <img src="/static/assets/cards/svg/visa-logo.svg" class="cardimage" />
+                            </clazy-load>
                         </v-flex>
                         <v-flex xs5 md2 class="text-xs-center">
-                            <img src="/static/assets/cards/svg/mastercard-logo.svg" class="cardimage"/>
+                            <clazy-load src="/static/assets/cards/svg/mastercard-logo.svg">
+                                <img src="/static/assets/cards/svg/mastercard-logo.svg" class="cardimage" />
+                            </clazy-load>
                         </v-flex>
                         <v-flex xs5 md2 class="text-xs-center">
-                            <img src="/static/assets/cards/svg/maestro-logo.svg" class="cardimage"/>
+                            <clazy-load src="/static/assets/cards/svg/maestro-logo.svg">
+                                <img src="/static/assets/cards/svg/maestro-logo.svg" class="cardimage"/>
+                            </clazy-load>
                         </v-flex>
                         <v-flex xs5 md2 class="text-xs-center">
-                            <img src="/static/assets/cards/svg/amex-logo.svg" class="cardimage"/>
+                            <clazy-load src="/static/assets/cards/svg/amex-logo.svg">
+                                <img src="/static/assets/cards/svg/amex-logo.svg" class="cardimage"/>
+                            </clazy-load>
                         </v-flex>
                         <v-flex xs5 md2 class="text-xs-center">
-                            <img src="/static/assets/cards/svg/paypal-logo.svg" class="cardimage" />
+                            <clazy-load src="/static/assets/cards/svg/paypal-logo.svg">
+                                <img src="/static/assets/cards/svg/paypal-logo.svg" class="cardimage"/>
+                            </clazy-load>
                         </v-flex>
                     </v-layout>
                 </div>
@@ -211,12 +221,16 @@
                 <div  class="work-section-container-row " >
                     <v-layout  row class="justify-start align-left align-content-left"  >
                         <v-flex xs12 md7>
-                            <img data-aos="fade-up" :src="require('@/assets/img/home/close-up.webp')" class="full-width" alt="">
+                            <clazy-load :src="require('@/assets/img/home/close-up.webp')">
+                                <img data-aos="fade-up" :src="require('@/assets/img/home/close-up.webp')" class="full-width" alt="">
+                            </clazy-load>
                         </v-flex>
                     </v-layout>
                     <v-layout  row class="justify-end align-right align-content-right" style="margin-top: 2rem"  >
                         <v-flex xs12 md8>
-                            <img data-aos="fade-up" :src="require('@/assets/img/home/close-up-2.webp')" class="full-width" alt="">
+                             <clazy-load :src="require('@/assets/img/home/close-up-2.webp')">
+                                <img data-aos="fade-up" :src="require('@/assets/img/home/close-up-2.webp')" class="full-width" alt="">
+                            </clazy-load>
                         </v-flex>
                     </v-layout>
                 </div>

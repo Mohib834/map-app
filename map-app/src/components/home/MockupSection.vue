@@ -1,7 +1,9 @@
 <template>
       <div class="mockup-container"  :style="containerStyle">
           <v-flex xs12 md8 class="text-xs-center" style="z-index:  1; margin: 0">
-              <img data-aos="fade-up" :src="require('@/assets/img/examples/' + image)"  class="section-image" style="" alt="">
+            <clazy-load :src="require('@/assets/img/examples/' + image)">
+              <img data-aos="fade-up"  :src="require('@/assets/img/examples/' + image)" class="section-image" style="" alt="">
+            </clazy-load>
           </v-flex>
           <v-layout column  xs12 md4 class="text-xs-center " :style="{'z-index': 1 , 'color': themeNameColour}">
               <h2 class=" font-weight-normal heading locationHeading" style="margin-bottom: 0" :style="locationTextStyle"> {{locationName}} </h2>
@@ -9,7 +11,9 @@
               <v-layout v-if="showTheme" row justify-center align-center  >
                   <h2 class=" font-weight-normal heading themeHeading" style=""> {{themeName}}  </h2>
                   <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" style="">
-                      <img  class="themebutton" style="" :src="'/static/assets/colourschemes/' + themeSVG">
+                      <clazy-load :src="'/static/assets/colourschemes/' + themeSVG">
+                        <img  class="themebutton" style="" :src="'/static/assets/colourschemes/' + themeSVG">
+                      </clazy-load>
                   </div>
               </v-layout>
               <v-flex shrink class="text-xs-center" style="margin-top: 30px" v-if="showCustomizeButton">

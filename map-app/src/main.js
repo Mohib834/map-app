@@ -17,6 +17,7 @@ import CurrencyWelcomeModal from './components/common/CurrencyWelcomeModal.vue'
 import CookiePolicyPopUp from './components/common/CookiePolicyPopUp.vue'
 import ShippingOfferMessage from './components/common/ShippingOfferMessage.vue'
 import HeroTextSection from './components/common/HeroTextSection.vue'
+import VueClazyLoad from 'vue-clazy-load';
 
 import MockupWidget from './components/common/MockupWidget'
 
@@ -62,6 +63,7 @@ export const bus = new Vue();
 
 
 Vue.use(VLazyImagePlugin);
+Vue.use(VueClazyLoad);
 
 Vue.config.productionTip = false
 

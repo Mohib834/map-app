@@ -25,12 +25,11 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="icon" href="<%= BASE_URL %>icon-logo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
 <!--
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
 -->
-    <link type="text/css" rel="stylesheet" href="https://cdn.materialdesignicons.com/2.5.94/css/materialdesignicons.min.css">    <!--
+ <!--
     <link rel='stylesheet' href='static/lib/simpleLightbox/simplebar.css' />
 -->
 
@@ -45,7 +44,6 @@
     <!--
     <link type="text/css" rel="stylesheet" href="/static/lib/modulobox/modulobox.min.css">
 -->
-    <link type="text/css" rel="stylesheet" href="/static/assets/colourschemes/themes.css">
 
     <!--typing animation-->
     <!--
@@ -90,6 +88,23 @@
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+      const loadStyleSheet = (href) => {
+        if (document.createStyleSheet){
+            document.createStyleSheet(href);
+        }
+        else {
+            document.querySelector('head').insertAdjacentHTML('beforeend', '<link rel="stylesheet" href="' + href + '"' + '/>');
+        }
+      };
+
+      window.onload = () => {
+        loadStyleSheet('https://cdn.materialdesignicons.com/2.5.94/css/materialdesignicons.min.css')
+        loadStyleSheet('/static/assets/colourschemes/themes.css')
+        loadStyleSheet('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap')
+      }
+    </script>
 
     <!-- slider - only used on home apage -->
     <!--
@@ -275,6 +290,5 @@ void main() {
 
     <!-- lightbox-->
     <script type="text/javascript" src="/static/lib/modulobox/modulobox.min.js"></script>
-
   </body>
 </html>
